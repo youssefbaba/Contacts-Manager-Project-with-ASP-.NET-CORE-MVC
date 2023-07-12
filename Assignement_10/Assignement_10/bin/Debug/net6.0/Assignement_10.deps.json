@@ -1,0 +1,120 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Assignement_10/1.0.0": {
+        "dependencies": {
+          "Autofac": "6.3.0",
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
+          "DataLayer": "1.0.0",
+          "ServiceContracts": "1.0.0",
+          "ServiceLayer": "1.0.0"
+        },
+        "runtime": {
+          "Assignement_10.dll": {}
+        }
+      },
+      "Autofac/6.3.0": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "runtime": {
+          "lib/net5.0/Autofac.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.3.0.0"
+          }
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/7.2.0": {
+        "dependencies": {
+          "Autofac": "6.3.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "7.2.0.0",
+            "fileVersion": "7.2.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {},
+      "System.Diagnostics.DiagnosticSource/4.7.1": {},
+      "DataLayer/1.0.0": {
+        "runtime": {
+          "DataLayer.dll": {}
+        }
+      },
+      "ServiceContracts/1.0.0": {
+        "dependencies": {
+          "DataLayer": "1.0.0"
+        },
+        "runtime": {
+          "ServiceContracts.dll": {}
+        }
+      },
+      "ServiceLayer/1.0.0": {
+        "dependencies": {
+          "DataLayer": "1.0.0",
+          "ServiceContracts": "1.0.0"
+        },
+        "runtime": {
+          "ServiceLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Assignement_10/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Autofac/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gO4bli0N8tDnBHzbYktcnbXlmN6T+IT5W+FUGgCUaM6pwwHXIxOPoUGvfGum7sZpJJgfQNgjFFv80ZPuARgRdA==",
+      "path": "autofac/6.3.0",
+      "hashPath": "autofac.6.3.0.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/7.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S2Jor8pTV+8QSs96ENq/FhGdnrWsntGs93z0OXYlIivUWGPNXQHNCjFPfSBeBlHClvJFEXMvlkY32bAKy2YkPg==",
+      "path": "autofac.extensions.dependencyinjection/7.2.0",
+      "hashPath": "autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
+      "path": "system.diagnostics.diagnosticsource/4.7.1",
+      "hashPath": "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    },
+    "DataLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiceContracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiceLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

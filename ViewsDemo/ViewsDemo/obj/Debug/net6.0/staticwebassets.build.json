@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "5jxiN9q1+YCFCWqzRFHCQm7BTKgYIxMQOxzCwpfxVik=",
+  "Source": "ViewsDemo",
+  "BasePath": "_content/ViewsDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ViewsDemo\\wwwroot",
+      "Source": "ViewsDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewsDemo\\ViewsDemo\\wwwroot\\",
+      "BasePath": "_content/ViewsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewsDemo\\ViewsDemo\\wwwroot\\StyleSheet.css",
+      "SourceId": "ViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewsDemo\\ViewsDemo\\wwwroot\\",
+      "BasePath": "_content/ViewsDemo",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

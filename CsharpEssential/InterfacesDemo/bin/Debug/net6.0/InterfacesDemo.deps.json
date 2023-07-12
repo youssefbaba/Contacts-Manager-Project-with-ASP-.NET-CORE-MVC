@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "InterfacesDemo/1.0.0": {
+        "dependencies": {
+          "ClassLibraryEight": "1.0.0"
+        },
+        "runtime": {
+          "InterfacesDemo.dll": {}
+        }
+      },
+      "ClassLibraryEight/1.0.0": {
+        "runtime": {
+          "ClassLibraryEight.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InterfacesDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibraryEight/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

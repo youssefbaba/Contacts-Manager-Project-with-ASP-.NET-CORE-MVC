@@ -1,0 +1,1054 @@
+2023-07-01 23:25:31.883 +01:00 [INF] After logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-01 23:25:31.894 +01:00 [DBG] Order: 4
+2023-07-01 23:25:31.907 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:25:31.919 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:25:31.960 +01:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 6071.3678ms
+2023-07-01 23:25:31.978 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:25:31.993 +01:00 [ERR] HTTP GET / responded 500 in 7231.1782 ms
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:bcacf0c0-0a66-47e7-8f16-f167b4e8f26e
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RepositoryLayer.PersonsRepository.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryLayer\PersonsRepository.cs:line 50
+   at ServiceLayer.PersonsService.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\ServiceLayer\PersonsService.cs:line 77
+   at CRUDExample.Controllers.PersonsController.Index(String searchBy, String searchString, String sortBy, SortOrderOptions sortOrder) in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\Controllers\PersonsController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-07-01 23:25:32.321 +01:00 [ERR] ExceptionType: Microsoft.Data.SqlClient.SqlException - ExceptionMessage: Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+2023-07-01 23:25:32.343 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:bcacf0c0-0a66-47e7-8f16-f167b4e8f26e
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RepositoryLayer.PersonsRepository.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryLayer\PersonsRepository.cs:line 50
+   at ServiceLayer.PersonsService.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\ServiceLayer\PersonsService.cs:line 77
+   at CRUDExample.Controllers.PersonsController.Index(String searchBy, String searchString, String sortBy, SortOrderOptions sortOrder) in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\Controllers\PersonsController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at CRUDExample.Middlewares.ExceptionHandlingMiddleware.Invoke(HttpContext httpContext) in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\Middlewares\ExceptionHandlingMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-07-01 23:25:33.357 +01:00 [DBG] 1 candidate(s) found for the request path '/Error'
+2023-07-01 23:25:33.366 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)' with route pattern 'Error' is valid for the request path '/Error'
+2023-07-01 23:25:33.397 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2023-07-01 23:25:33.406 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Error
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5037
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-User: [Redacted]
+2023-07-01 23:25:33.444 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-07-01 23:25:33.453 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)' already set, skipping route matching.
+2023-07-01 23:25:33.458 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2023-07-01 23:25:33.482 +01:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller CRUDExample.Controllers.HomeController (CRUDExample).
+2023-07-01 23:25:33.502 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-01 23:25:33.522 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-01 23:25:34.221 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)"]
+2023-07-01 23:25:35.123 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-01 23:25:35.270 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-01 23:25:35.517 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.HomeController (CRUDExample)
+2023-07-01 23:25:35.710 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.HomeController (CRUDExample)
+2023-07-01 23:25:35.948 +01:00 [DBG] View lookup cache miss for view '_Error' in controller 'Home'.
+2023-07-01 23:25:35.972 +01:00 [INF] Executing ViewResult, running view _Error.
+2023-07-01 23:25:35.975 +01:00 [DBG] The view path '/Views/Shared/_Error.cshtml' was found in 28.6498ms.
+2023-07-01 23:25:36.342 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:25:36.407 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:25:36.455 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:25:36.543 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-01 23:25:36.587 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-01 23:25:36.618 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:25:36.639 +01:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-07-01 23:25:36.654 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-07-01 23:25:36.708 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-07-01 23:25:37.001 +01:00 [INF] Executed ViewResult - view _Error executed in 1055.0003ms.
+2023-07-01 23:25:37.013 +01:00 [INF] Executed action CRUDExample.Controllers.HomeController.Error (CRUDExample) in 1496.5321ms
+2023-07-01 23:25:37.021 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2023-07-01 23:25:37.027 +01:00 [INF] Response:
+StatusCode: 500
+Content-Type: text/html; charset=utf-8
+Date: Sat, 01 Jul 2023 22:25:35 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: -1
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+X-Custom-Key-From-Global: [Redacted]
+2023-07-01 23:25:37.039 +01:00 [ERR] HTTP GET /Error responded 500 in 3633.9145 ms
+2023-07-01 23:25:37.322 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-07-01 23:25:37.418 +01:00 [DBG] Connection id "0HMRQG87EOBPA" completed keep alive response.
+2023-07-01 23:25:37.491 +01:00 [DBG] Connection id "0HMRQG87EOBPC" accepted.
+2023-07-01 23:25:37.650 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2023-07-01 23:25:37.733 +01:00 [DBG] Connection id "0HMRQG87EOBPC" started.
+2023-07-01 23:25:37.733 +01:00 [DBG] Connection id "0HMRQG87EOBPD" accepted.
+2023-07-01 23:25:37.743 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/ - - - 500 - text/html;+charset=utf-8 13174.0443ms
+2023-07-01 23:25:37.747 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/StyleSheet.css - -
+2023-07-01 23:25:37.802 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /StyleSheet.css
+Accept: text/css,*/*;q=0.1
+Connection: keep-alive
+Host: localhost:5037
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cookie: [Redacted]
+Referer: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+2023-07-01 23:25:37.800 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 23:25:37.751 +01:00 [DBG] Connection id "0HMRQG87EOBPD" started.
+2023-07-01 23:25:37.852 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/_vs/browserLink - -
+2023-07-01 23:25:37.839 +01:00 [DBG] Connection id "0HMRQG87EOBPA" completed keep alive response.
+2023-07-01 23:25:37.955 +01:00 [INF] Sending file. Request path: '/StyleSheet.css'. Physical path: 'C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\wwwroot\StyleSheet.css'
+2023-07-01 23:25:38.617 +01:00 [DBG] Connection id "0HMRQG87EOBPD" completed keep alive response.
+2023-07-01 23:25:39.072 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 1271.0873ms
+2023-07-01 23:25:39.075 +01:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Sat, 01 Jul 2023 22:25:36 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Fri, 30 Jun 2023 15:33:01 GMT
+Content-Length: 11719
+2023-07-01 23:25:39.121 +01:00 [INF] HTTP GET /StyleSheet.css responded 200 in 1319.1386 ms
+2023-07-01 23:25:39.093 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1240.7768ms
+2023-07-01 23:25:39.127 +01:00 [DBG] Connection id "0HMRQG87EOBPC" completed keep alive response.
+2023-07-01 23:25:39.156 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/StyleSheet.css - - - 200 11719 text/css 1409.1832ms
+2023-07-01 23:25:57.389 +01:00 [DBG] Connection id "0HMRQG87EOBPE" received FIN.
+2023-07-01 23:25:57.398 +01:00 [DBG] Connection id "0HMRQG87EOBPE" accepted.
+2023-07-01 23:25:57.400 +01:00 [DBG] Connection id "0HMRQG87EOBPE" started.
+2023-07-01 23:25:57.407 +01:00 [DBG] Connection id "0HMRQG87EOBPE" sending FIN because: "The client closed the connection."
+2023-07-01 23:25:57.417 +01:00 [DBG] Connection id "0HMRQG87EOBPE" disconnecting.
+2023-07-01 23:25:57.432 +01:00 [DBG] Connection id "0HMRQG87EOBPE" stopped.
+2023-07-01 23:26:45.565 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-07-01 23:26:45.783 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-07-01 23:26:45.786 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-07-01 23:26:45.789 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-07-01 23:26:45.791 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-07-01 23:26:45.793 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPDF.cshtml'.
+2023-07-01 23:26:45.796 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Breadcrumb.cshtml'.
+2023-07-01 23:26:45.798 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Error.cshtml'.
+2023-07-01 23:26:45.800 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-07-01 23:26:45.802 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-07-01 23:26:45.813 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-07-01 23:26:45.816 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-07-01 23:26:45.866 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-01 23:26:46.068 +01:00 [DBG] Hosting starting
+2023-07-01 23:26:46.187 +01:00 [INF] User profile is available. Using 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-01 23:26:46.360 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-086a6081-eb03-4bb1-a34d-5120bae08b88.xml'.
+2023-07-01 23:26:46.378 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-a87a6934-b999-4d05-b268-66210133ed23.xml'.
+2023-07-01 23:26:46.542 +01:00 [DBG] Found key {086a6081-eb03-4bb1-a34d-5120bae08b88}.
+2023-07-01 23:26:46.563 +01:00 [DBG] Found key {a87a6934-b999-4d05-b268-66210133ed23}.
+2023-07-01 23:26:46.617 +01:00 [DBG] Considering key {a87a6934-b999-4d05-b268-66210133ed23} with expiration date 2023-08-27 09:39:32Z as default key.
+2023-07-01 23:26:46.628 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-01 23:26:46.676 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-07-01 23:26:46.691 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-01 23:26:46.765 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-07-01 23:26:46.800 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-07-01 23:26:46.825 +01:00 [DBG] Using key {a87a6934-b999-4d05-b268-66210133ed23} as the default key.
+2023-07-01 23:26:46.833 +01:00 [DBG] Key ring with default key {a87a6934-b999-4d05-b268-66210133ed23} was loaded during application startup.
+2023-07-01 23:26:47.019 +01:00 [INF] Now listening on: http://localhost:5037
+2023-07-01 23:26:47.038 +01:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-07-01 23:26:47.042 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-07-01 23:26:47.052 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-07-01 23:26:47.063 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 23:26:47.065 +01:00 [INF] Hosting environment: Production
+2023-07-01 23:26:47.070 +01:00 [INF] Content root path: C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\
+2023-07-01 23:26:47.090 +01:00 [DBG] Hosting started
+2023-07-01 23:26:47.486 +01:00 [DBG] Connection id "0HMRQG9102HEQ" accepted.
+2023-07-01 23:26:47.486 +01:00 [DBG] Connection id "0HMRQG9102HER" accepted.
+2023-07-01 23:26:47.491 +01:00 [DBG] Connection id "0HMRQG9102HEQ" started.
+2023-07-01 23:26:47.551 +01:00 [DBG] Connection id "0HMRQG9102HER" received FIN.
+2023-07-01 23:26:47.561 +01:00 [DBG] Connection id "0HMRQG9102HEQ" received FIN.
+2023-07-01 23:26:47.626 +01:00 [DBG] Connection id "0HMRQG9102HER" started.
+2023-07-01 23:26:47.799 +01:00 [DBG] Connection id "0HMRQG9102HEQ" disconnecting.
+2023-07-01 23:26:47.796 +01:00 [DBG] Connection id "0HMRQG9102HER" sending FIN because: "The client closed the connection."
+2023-07-01 23:26:47.811 +01:00 [DBG] Connection id "0HMRQG9102HEQ" sending FIN because: "The client closed the connection."
+2023-07-01 23:26:47.835 +01:00 [DBG] Connection id "0HMRQG9102HER" disconnecting.
+2023-07-01 23:26:47.860 +01:00 [DBG] Connection id "0HMRQG9102HEQ" stopped.
+2023-07-01 23:26:47.871 +01:00 [DBG] Connection id "0HMRQG9102HER" stopped.
+2023-07-01 23:26:48.645 +01:00 [DBG] Connection id "0HMRQG9102HES" accepted.
+2023-07-01 23:26:49.359 +01:00 [DBG] Connection id "0HMRQG9102HET" accepted.
+2023-07-01 23:26:49.360 +01:00 [DBG] Connection id "0HMRQG9102HES" started.
+2023-07-01 23:26:49.386 +01:00 [DBG] Connection id "0HMRQG9102HET" started.
+2023-07-01 23:26:50.220 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/ - -
+2023-07-01 23:26:50.582 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-01 23:26:50.679 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5037
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-User: [Redacted]
+2023-07-01 23:26:50.694 +01:00 [DBG] The request path / does not match a supported file type
+2023-07-01 23:26:50.859 +01:00 [DBG] 1 candidate(s) found for the request path '/'
+2023-07-01 23:26:50.879 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern '' is valid for the request path '/'
+2023-07-01 23:26:50.896 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:26:50.910 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:26:51.135 +01:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-07-01 23:26:51.152 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-01 23:26:51.167 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-01 23:26:51.197 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 1)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter (Order: 4)"]
+2023-07-01 23:26:51.230 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-01 23:26:51.270 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilters.PersonsAlwaysRunResultFilter","CRUDExample.Filters.ResultFilters.PersonsListResultFilter"]
+2023-07-01 23:26:51.346 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-01 23:26:51.955 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-01 23:26:52.057 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-01 23:26:52.084 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-07-01 23:26:52.093 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:26:52.104 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:26:52.121 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:26:52.124 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:26:52.128 +01:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-07-01 23:26:52.173 +01:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:26:52.185 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-07-01 23:26:52.189 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:26:52.208 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-07-01 23:26:52.224 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-01 23:26:52.241 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-01 23:26:52.248 +01:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-07-01 23:26:52.255 +01:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-07-01 23:26:52.258 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-07-01 23:26:52.277 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:26:52.287 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:26:52.305 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:26:52.315 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:26:52.330 +01:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-07-01 23:26:52.337 +01:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:26:52.347 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-01 23:26:52.360 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-07-01 23:26:52.377 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:26:52.397 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:26:52.412 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:26:52.426 +01:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-01 23:26:52.442 +01:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:26:52.468 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:26:52.476 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:26:52.530 +01:00 [INF] Before logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-01 23:26:52.542 +01:00 [DBG] Order: 4
+2023-07-01 23:26:52.557 +01:00 [INF] Index action method of PersonsController
+2023-07-01 23:26:52.567 +01:00 [DBG] searchBy: null, searchString: null, sortBy: PersonName, sortOrder: "ASC"
+2023-07-01 23:26:52.596 +01:00 [INF] GetAllPersons method of PersonsService
+2023-07-01 23:26:52.605 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-01 23:26:54.669 +01:00 [DBG] Connection id "0HMRQG9102HET" received FIN.
+2023-07-01 23:26:54.673 +01:00 [DBG] Connection id "0HMRQG9102HET" disconnecting.
+2023-07-01 23:26:54.676 +01:00 [DBG] Connection id "0HMRQG9102HET" sending FIN because: "The client closed the connection."
+2023-07-01 23:26:54.682 +01:00 [DBG] Connection id "0HMRQG9102HET" stopped.
+2023-07-01 23:26:56.238 +01:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2023-07-01 23:26:56.463 +01:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2023-07-01 23:26:56.900 +01:00 [DBG] Including navigation: 'Person.Country'.
+2023-07-01 23:26:57.698 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Person>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Person.Address (string) MaxLength(200), 1], [Property: Person.CountryID (Guid?) FK Index, 2], [Property: Person.DateOfBirth (DateTime?), 3], [Property: Person.Email (string) MaxLength(40), 4], [Property: Person.Gender (string) MaxLength(10), 5], [Property: Person.PersonName (string) MaxLength(40), 6], [Property: Person.ReceiveNewsLetters (bool) Required, 7], [Property: Person.SSN (string), 8], [Property: Person.SSNIsChanged (bool) Required, 9], [Property: Person.TIN (string) ValueGenerated.OnAdd, 10] }
+            1 -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 11], [Property: Country.CountryName (string), 12] }
+        SELECT p.PersonID, p.Address, p.CountryID, p.DateOfBirth, p.Email, p.Gender, p.PersonName, p.ReceiveNewsLetters, p.SSN, p.SSNIsChanged, p.TaxIdentificationNumber, c.CountryID, c.CountryName
+        FROM Persons AS p
+        LEFT JOIN Countries AS c ON p.CountryID == c.CountryID), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Person>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-07-01 23:26:57.912 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-07-01 23:26:57.947 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (21ms).
+2023-07-01 23:26:57.968 +01:00 [DBG] Opening connection to database 'MyDatabaseError' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:26:58.063 +01:00 [ERR] An error occurred using the connection to database 'MyDatabaseError' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:26:58.166 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entities.ApplicationDbContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:bc081b10-8fb2-4ab9-bc57-4f79ccc18699
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:bc081b10-8fb2-4ab9-bc57-4f79ccc18699
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-07-01 23:26:58.589 +01:00 [INF] After logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-01 23:26:58.594 +01:00 [DBG] Order: 4
+2023-07-01 23:26:58.601 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:26:58.614 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:26:58.659 +01:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 7293.158ms
+2023-07-01 23:26:58.666 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:26:58.686 +01:00 [ERR] HTTP GET / responded 500 in 8024.8546 ms
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:bc081b10-8fb2-4ab9-bc57-4f79ccc18699
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RepositoryLayer.PersonsRepository.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryLayer\PersonsRepository.cs:line 50
+   at ServiceLayer.PersonsService.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\ServiceLayer\PersonsService.cs:line 77
+   at CRUDExample.Controllers.PersonsController.Index(String searchBy, String searchString, String sortBy, SortOrderOptions sortOrder) in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\Controllers\PersonsController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-07-01 23:26:59.172 +01:00 [ERR] ExceptionType: Microsoft.Data.SqlClient.SqlException - ExceptionMessage: Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+2023-07-01 23:26:59.196 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "MyDatabaseError" requested by the login. The login failed.
+Login failed for user 'DESKTOP-8FNS5AL\YoussefBaba'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+ClientConnectionId:bc081b10-8fb2-4ab9-bc57-4f79ccc18699
+Error Number:4060,State:1,Class:11
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RepositoryLayer.PersonsRepository.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryLayer\PersonsRepository.cs:line 50
+   at ServiceLayer.PersonsService.GetAllPersons() in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\ServiceLayer\PersonsService.cs:line 77
+   at CRUDExample.Controllers.PersonsController.Index(String searchBy, String searchString, String sortBy, SortOrderOptions sortOrder) in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\Controllers\PersonsController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at CRUDExample.Middlewares.ExceptionHandlingMiddleware.Invoke(HttpContext httpContext) in C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\Middlewares\ExceptionHandlingMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-07-01 23:26:59.735 +01:00 [DBG] 1 candidate(s) found for the request path '/Error'
+2023-07-01 23:26:59.742 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)' with route pattern 'Error' is valid for the request path '/Error'
+2023-07-01 23:26:59.751 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2023-07-01 23:26:59.767 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Error
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5037
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-User: [Redacted]
+2023-07-01 23:26:59.812 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-07-01 23:26:59.815 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)' already set, skipping route matching.
+2023-07-01 23:26:59.830 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2023-07-01 23:26:59.847 +01:00 [INF] Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller CRUDExample.Controllers.HomeController (CRUDExample).
+2023-07-01 23:26:59.874 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-01 23:26:59.879 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-01 23:26:59.923 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)"]
+2023-07-01 23:26:59.960 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-01 23:26:59.978 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-01 23:27:00.001 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.HomeController (CRUDExample)
+2023-07-01 23:27:00.012 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.HomeController (CRUDExample)
+2023-07-01 23:27:00.448 +01:00 [DBG] View lookup cache miss for view '_Error' in controller 'Home'.
+2023-07-01 23:27:00.498 +01:00 [INF] Executing ViewResult, running view _Error.
+2023-07-01 23:27:00.508 +01:00 [DBG] The view path '/Views/Shared/_Error.cshtml' was found in 62.884ms.
+2023-07-01 23:27:01.003 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:27:01.047 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:27:01.086 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:27:01.133 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-01 23:27:01.218 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-01 23:27:01.311 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:27:01.352 +01:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-07-01 23:27:01.388 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-07-01 23:27:01.751 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-07-01 23:27:02.324 +01:00 [INF] Executed ViewResult - view _Error executed in 1880.7741ms.
+2023-07-01 23:27:02.347 +01:00 [INF] Executed action CRUDExample.Controllers.HomeController.Error (CRUDExample) in 2346.0651ms
+2023-07-01 23:27:02.366 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.HomeController.Error (CRUDExample)'
+2023-07-01 23:27:02.379 +01:00 [INF] Response:
+StatusCode: 500
+Content-Type: text/html; charset=utf-8
+Date: Sat, 01 Jul 2023 22:27:01 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: -1
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+X-Custom-Key-From-Global: [Redacted]
+2023-07-01 23:27:02.414 +01:00 [ERR] HTTP GET /Error responded 500 in 2648.3433 ms
+2023-07-01 23:27:02.709 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-07-01 23:27:02.893 +01:00 [DBG] Connection id "0HMRQG9102HES" completed keep alive response.
+2023-07-01 23:27:03.106 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2023-07-01 23:27:03.217 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/ - - - 500 - text/html;+charset=utf-8 13322.3789ms
+2023-07-01 23:27:06.031 +01:00 [DBG] Connection id "0HMRQG9102HEU" accepted.
+2023-07-01 23:27:06.052 +01:00 [DBG] Connection id "0HMRQG9102HEU" started.
+2023-07-01 23:27:06.071 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/_vs/browserLink - -
+2023-07-01 23:27:06.081 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 23:27:06.119 +01:00 [DBG] Connection id "0HMRQG9102HEU" completed keep alive response.
+2023-07-01 23:27:06.129 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 48.2719ms
+2023-07-01 23:27:06.255 +01:00 [DBG] Connection id "0HMRQG9102HES" completed keep alive response.
+2023-07-01 23:27:06.304 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 235.3766ms
+2023-07-01 23:28:07.650 +01:00 [DBG] Config reload token fired. Checking for changes...
+2023-07-01 23:28:07.918 +01:00 [DBG] Config reload token fired. Checking for changes...
+2023-07-01 23:28:25.130 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-07-01 23:28:25.399 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-07-01 23:28:25.407 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-07-01 23:28:25.410 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-07-01 23:28:25.444 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-07-01 23:28:25.447 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPDF.cshtml'.
+2023-07-01 23:28:25.452 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Breadcrumb.cshtml'.
+2023-07-01 23:28:25.456 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Error.cshtml'.
+2023-07-01 23:28:25.459 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-07-01 23:28:25.462 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-07-01 23:28:25.465 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-07-01 23:28:25.469 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-07-01 23:28:25.520 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-01 23:28:26.179 +01:00 [DBG] Hosting starting
+2023-07-01 23:28:26.217 +01:00 [INF] User profile is available. Using 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-01 23:28:26.237 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-086a6081-eb03-4bb1-a34d-5120bae08b88.xml'.
+2023-07-01 23:28:26.246 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-a87a6934-b999-4d05-b268-66210133ed23.xml'.
+2023-07-01 23:28:26.280 +01:00 [DBG] Found key {086a6081-eb03-4bb1-a34d-5120bae08b88}.
+2023-07-01 23:28:26.290 +01:00 [DBG] Found key {a87a6934-b999-4d05-b268-66210133ed23}.
+2023-07-01 23:28:26.324 +01:00 [DBG] Considering key {a87a6934-b999-4d05-b268-66210133ed23} with expiration date 2023-08-27 09:39:32Z as default key.
+2023-07-01 23:28:26.340 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-01 23:28:26.380 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-07-01 23:28:26.398 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-01 23:28:26.420 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-07-01 23:28:26.433 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-07-01 23:28:26.448 +01:00 [DBG] Using key {a87a6934-b999-4d05-b268-66210133ed23} as the default key.
+2023-07-01 23:28:26.455 +01:00 [DBG] Key ring with default key {a87a6934-b999-4d05-b268-66210133ed23} was loaded during application startup.
+2023-07-01 23:28:26.580 +01:00 [INF] Now listening on: http://localhost:5037
+2023-07-01 23:28:26.586 +01:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-07-01 23:28:26.589 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-07-01 23:28:26.594 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-07-01 23:28:26.598 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 23:28:26.610 +01:00 [INF] Hosting environment: Production
+2023-07-01 23:28:26.619 +01:00 [INF] Content root path: C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\
+2023-07-01 23:28:26.625 +01:00 [DBG] Hosting started
+2023-07-01 23:28:26.715 +01:00 [DBG] Connection id "0HMRQG9UICKJ2" accepted.
+2023-07-01 23:28:26.720 +01:00 [DBG] Connection id "0HMRQG9UICKJ2" started.
+2023-07-01 23:28:26.758 +01:00 [DBG] Connection id "0HMRQG9UICKJ3" accepted.
+2023-07-01 23:28:26.762 +01:00 [DBG] Connection id "0HMRQG9UICKJ3" started.
+2023-07-01 23:28:26.867 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/ - -
+2023-07-01 23:28:26.957 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-01 23:28:26.980 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5037
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+2023-07-01 23:28:26.998 +01:00 [DBG] The request path / does not match a supported file type
+2023-07-01 23:28:27.044 +01:00 [DBG] Connection id "0HMRQG9UICKJ4" accepted.
+2023-07-01 23:28:27.047 +01:00 [DBG] Connection id "0HMRQG9UICKJ4" started.
+2023-07-01 23:28:27.115 +01:00 [DBG] 1 candidate(s) found for the request path '/'
+2023-07-01 23:28:27.131 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern '' is valid for the request path '/'
+2023-07-01 23:28:27.139 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:28:27.152 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:28:27.343 +01:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-07-01 23:28:27.357 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-01 23:28:27.361 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-01 23:28:27.381 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 1)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter (Order: 4)"]
+2023-07-01 23:28:27.409 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-01 23:28:27.414 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilters.PersonsAlwaysRunResultFilter","CRUDExample.Filters.ResultFilters.PersonsListResultFilter"]
+2023-07-01 23:28:27.427 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-01 23:28:27.826 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-01 23:28:27.912 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-01 23:28:27.934 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-07-01 23:28:27.944 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:28:27.962 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:27.975 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:27.985 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:27.999 +01:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-07-01 23:28:28.040 +01:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:28.050 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-07-01 23:28:28.062 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:28:28.072 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:28.090 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:28.095 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:28.099 +01:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-07-01 23:28:28.114 +01:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:28.128 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-07-01 23:28:28.135 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:28:28.159 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:28.175 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:28.191 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:28.195 +01:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-07-01 23:28:28.212 +01:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:28.219 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-01 23:28:28.225 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-07-01 23:28:28.247 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:28.258 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:28.271 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:28.286 +01:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-01 23:28:28.316 +01:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:28.335 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:28.346 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:28.394 +01:00 [INF] Before logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:28.400 +01:00 [DBG] Order: 4
+2023-07-01 23:28:28.412 +01:00 [INF] Index action method of PersonsController
+2023-07-01 23:28:28.417 +01:00 [DBG] searchBy: null, searchString: null, sortBy: PersonName, sortOrder: "ASC"
+2023-07-01 23:28:28.439 +01:00 [INF] GetAllPersons method of PersonsService
+2023-07-01 23:28:28.449 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-01 23:28:36.396 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-07-01 23:28:36.592 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-07-01 23:28:36.606 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-07-01 23:28:36.619 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-07-01 23:28:36.633 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-07-01 23:28:36.646 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPDF.cshtml'.
+2023-07-01 23:28:36.650 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Breadcrumb.cshtml'.
+2023-07-01 23:28:36.663 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Error.cshtml'.
+2023-07-01 23:28:36.666 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-07-01 23:28:36.680 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-07-01 23:28:36.683 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-07-01 23:28:36.697 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-07-01 23:28:36.865 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-01 23:28:37.287 +01:00 [DBG] Hosting starting
+2023-07-01 23:28:37.328 +01:00 [INF] User profile is available. Using 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-01 23:28:37.345 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-086a6081-eb03-4bb1-a34d-5120bae08b88.xml'.
+2023-07-01 23:28:37.355 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-a87a6934-b999-4d05-b268-66210133ed23.xml'.
+2023-07-01 23:28:37.388 +01:00 [DBG] Found key {086a6081-eb03-4bb1-a34d-5120bae08b88}.
+2023-07-01 23:28:37.400 +01:00 [DBG] Found key {a87a6934-b999-4d05-b268-66210133ed23}.
+2023-07-01 23:28:37.436 +01:00 [DBG] Considering key {a87a6934-b999-4d05-b268-66210133ed23} with expiration date 2023-08-27 09:39:32Z as default key.
+2023-07-01 23:28:37.459 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-01 23:28:37.487 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-07-01 23:28:37.509 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-01 23:28:37.536 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-07-01 23:28:37.555 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-07-01 23:28:37.577 +01:00 [DBG] Using key {a87a6934-b999-4d05-b268-66210133ed23} as the default key.
+2023-07-01 23:28:37.584 +01:00 [DBG] Key ring with default key {a87a6934-b999-4d05-b268-66210133ed23} was loaded during application startup.
+2023-07-01 23:28:37.731 +01:00 [INF] Now listening on: http://localhost:5037
+2023-07-01 23:28:37.737 +01:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-07-01 23:28:37.740 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-07-01 23:28:37.761 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-07-01 23:28:37.767 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-01 23:28:37.769 +01:00 [INF] Hosting environment: Production
+2023-07-01 23:28:37.785 +01:00 [INF] Content root path: C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\CRUDExample\
+2023-07-01 23:28:37.793 +01:00 [DBG] Hosting started
+2023-07-01 23:28:38.189 +01:00 [DBG] Connection id "0HMRQGA1VQHE2" accepted.
+2023-07-01 23:28:38.189 +01:00 [DBG] Connection id "0HMRQGA1VQHE3" accepted.
+2023-07-01 23:28:38.195 +01:00 [DBG] Connection id "0HMRQGA1VQHE2" started.
+2023-07-01 23:28:38.199 +01:00 [DBG] Connection id "0HMRQGA1VQHE3" started.
+2023-07-01 23:28:38.248 +01:00 [DBG] Connection id "0HMRQGA1VQHE2" received FIN.
+2023-07-01 23:28:38.248 +01:00 [DBG] Connection id "0HMRQGA1VQHE3" received FIN.
+2023-07-01 23:28:38.265 +01:00 [DBG] Connection id "0HMRQGA1VQHE2" sending FIN because: "The client closed the connection."
+2023-07-01 23:28:38.272 +01:00 [DBG] Connection id "0HMRQGA1VQHE3" disconnecting.
+2023-07-01 23:28:38.282 +01:00 [DBG] Connection id "0HMRQGA1VQHE2" disconnecting.
+2023-07-01 23:28:38.292 +01:00 [DBG] Connection id "0HMRQGA1VQHE3" sending FIN because: "The client closed the connection."
+2023-07-01 23:28:38.310 +01:00 [DBG] Connection id "0HMRQGA1VQHE2" stopped.
+2023-07-01 23:28:38.315 +01:00 [DBG] Connection id "0HMRQGA1VQHE3" stopped.
+2023-07-01 23:28:38.591 +01:00 [DBG] Connection id "0HMRQGA1VQHE4" accepted.
+2023-07-01 23:28:38.603 +01:00 [DBG] Connection id "0HMRQGA1VQHE4" started.
+2023-07-01 23:28:38.817 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/ - -
+2023-07-01 23:28:38.915 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-01 23:28:38.938 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5037
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-User: [Redacted]
+2023-07-01 23:28:38.976 +01:00 [DBG] The request path / does not match a supported file type
+2023-07-01 23:28:39.091 +01:00 [DBG] 1 candidate(s) found for the request path '/'
+2023-07-01 23:28:39.115 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern '' is valid for the request path '/'
+2023-07-01 23:28:39.123 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:28:39.139 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:28:39.337 +01:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-07-01 23:28:39.352 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-01 23:28:39.369 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-01 23:28:39.379 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 1)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter (Order: 4)"]
+2023-07-01 23:28:39.407 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-01 23:28:39.414 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilters.PersonsAlwaysRunResultFilter","CRUDExample.Filters.ResultFilters.PersonsListResultFilter"]
+2023-07-01 23:28:39.450 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-01 23:28:39.909 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-01 23:28:40.015 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-01 23:28:40.039 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-07-01 23:28:40.058 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:28:40.075 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:40.102 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:40.107 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:40.121 +01:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-07-01 23:28:40.169 +01:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-07-01 23:28:40.181 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-07-01 23:28:40.186 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:28:40.205 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:40.215 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:40.220 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:40.240 +01:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-07-01 23:28:40.249 +01:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-07-01 23:28:40.262 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-07-01 23:28:40.285 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-07-01 23:28:40.305 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:40.324 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:40.341 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:40.356 +01:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-07-01 23:28:40.375 +01:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-07-01 23:28:40.386 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-01 23:28:40.394 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-07-01 23:28:40.418 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:40.425 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:40.438 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:40.455 +01:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-01 23:28:40.470 +01:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-01 23:28:40.488 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:40.501 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:40.555 +01:00 [INF] Before logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:40.568 +01:00 [DBG] Order: 4
+2023-07-01 23:28:40.592 +01:00 [INF] Index action method of PersonsController
+2023-07-01 23:28:40.600 +01:00 [DBG] searchBy: null, searchString: null, sortBy: PersonName, sortOrder: "ASC"
+2023-07-01 23:28:40.625 +01:00 [INF] GetAllPersons method of PersonsService
+2023-07-01 23:28:40.639 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-01 23:28:45.308 +01:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2023-07-01 23:28:45.548 +01:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2023-07-01 23:28:45.962 +01:00 [DBG] Including navigation: 'Person.Country'.
+2023-07-01 23:28:46.689 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Person>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Person.Address (string) MaxLength(200), 1], [Property: Person.CountryID (Guid?) FK Index, 2], [Property: Person.DateOfBirth (DateTime?), 3], [Property: Person.Email (string) MaxLength(40), 4], [Property: Person.Gender (string) MaxLength(10), 5], [Property: Person.PersonName (string) MaxLength(40), 6], [Property: Person.ReceiveNewsLetters (bool) Required, 7], [Property: Person.SSN (string), 8], [Property: Person.SSNIsChanged (bool) Required, 9], [Property: Person.TIN (string) ValueGenerated.OnAdd, 10] }
+            1 -> Dictionary<IProperty, int> { [Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 11], [Property: Country.CountryName (string), 12] }
+        SELECT p.PersonID, p.Address, p.CountryID, p.DateOfBirth, p.Email, p.Gender, p.PersonName, p.ReceiveNewsLetters, p.SSN, p.SSNIsChanged, p.TaxIdentificationNumber, c.CountryID, c.CountryName
+        FROM Persons AS p
+        LEFT JOIN Countries AS c ON p.CountryID == c.CountryID), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Person>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-07-01 23:28:46.875 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-07-01 23:28:46.909 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (17ms).
+2023-07-01 23:28:46.933 +01:00 [DBG] Opening connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:47.216 +01:00 [DBG] Opened connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:47.270 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[SSN], [p].[SSNIsChanged], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-07-01 23:28:47.473 +01:00 [INF] Executed DbCommand (214ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[SSN], [p].[SSNIsChanged], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-07-01 23:28:47.620 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.813 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.890 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.900 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.906 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.924 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.930 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.938 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.956 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.963 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.972 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:47.997 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:48.006 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:48.025 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:48.034 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:48.060 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:48.077 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Person' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:48.097 +01:00 [DBG] Context 'ApplicationDbContext' started tracking 'Country' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-07-01 23:28:48.141 +01:00 [DBG] A data reader was disposed.
+2023-07-01 23:28:48.161 +01:00 [DBG] Closing connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:48.171 +01:00 [DBG] Closed connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:48.208 +01:00 [INF] GetFilteredPersons method of PersonsService
+2023-07-01 23:28:48.213 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-01 23:28:48.222 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-07-01 23:28:48.225 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2023-07-01 23:28:48.244 +01:00 [DBG] Opening connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:48.252 +01:00 [DBG] Opened connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:48.256 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[SSN], [p].[SSNIsChanged], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-07-01 23:28:48.319 +01:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[SSN], [p].[SSNIsChanged], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-07-01 23:28:48.359 +01:00 [DBG] A data reader was disposed.
+2023-07-01 23:28:48.361 +01:00 [DBG] Closing connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:48.369 +01:00 [DBG] Closed connection to database 'MyDatabase' on server 'localhost\SQLEXPRESS'.
+2023-07-01 23:28:48.393 +01:00 [INF] GetSortedPersons method of PersonsService
+2023-07-01 23:28:48.411 +01:00 [INF] After logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:48.419 +01:00 [DBG] Order: 4
+2023-07-01 23:28:48.424 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:48.428 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-01 23:28:48.457 +01:00 [INF] before logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-01 23:28:48.471 +01:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2023-07-01 23:28:48.492 +01:00 [INF] Executing ViewResult, running view Index.
+2023-07-01 23:28:48.521 +01:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 25.8672ms.
+2023-07-01 23:28:48.839 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:48.872 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-01 23:28:48.880 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-01 23:28:48.928 +01:00 [DBG] View lookup cache miss for view '_Breadcrumb' in controller 'Persons'.
+2023-07-01 23:28:49.047 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:49.058 +01:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2023-07-01 23:28:49.065 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2023-07-01 23:28:49.092 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:49.097 +01:00 [DBG] Successfully processed template Persons/PersonsPDF for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons/PersonsPDF and 
+2023-07-01 23:28:49.121 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons/PersonsPDF
+2023-07-01 23:28:49.131 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:49.155 +01:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2023-07-01 23:28:49.174 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2023-07-01 23:28:49.185 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:49.190 +01:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2023-07-01 23:28:49.217 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2023-07-01 23:28:49.309 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:49.319 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-01 23:28:49.343 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-01 23:28:49.428 +01:00 [DBG] View lookup cache miss for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.814 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.849 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.856 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.865 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.885 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.894 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.899 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-01 23:28:49.918 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:49.928 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/a54a4f07-9563-4e5d-8c43-f1f4b64c2821 and 
+2023-07-01 23:28:49.945 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/a54a4f07-9563-4e5d-8c43-f1f4b64c2821
+2023-07-01 23:28:49.961 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:49.979 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/a54a4f07-9563-4e5d-8c43-f1f4b64c2821 and 
+2023-07-01 23:28:49.991 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/a54a4f07-9563-4e5d-8c43-f1f4b64c2821
+2023-07-01 23:28:50.016 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.048 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/9f4bc2c2-b153-49cb-a39e-12ca07eff8dc and 
+2023-07-01 23:28:50.070 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/9f4bc2c2-b153-49cb-a39e-12ca07eff8dc
+2023-07-01 23:28:50.108 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.130 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/9f4bc2c2-b153-49cb-a39e-12ca07eff8dc and 
+2023-07-01 23:28:50.161 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/9f4bc2c2-b153-49cb-a39e-12ca07eff8dc
+2023-07-01 23:28:50.192 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.224 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2023-07-01 23:28:50.263 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2023-07-01 23:28:50.301 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.335 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e and 
+2023-07-01 23:28:50.356 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/c6d50a47-f7e6-4482-8be0-4ddfc057fa6e
+2023-07-01 23:28:50.375 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.393 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/6fe1dfab-a0d4-41cb-a1cb-f4ce20832fea and 
+2023-07-01 23:28:50.415 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/6fe1dfab-a0d4-41cb-a1cb-f4ce20832fea
+2023-07-01 23:28:50.459 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.499 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/6fe1dfab-a0d4-41cb-a1cb-f4ce20832fea and 
+2023-07-01 23:28:50.570 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/6fe1dfab-a0d4-41cb-a1cb-f4ce20832fea
+2023-07-01 23:28:50.619 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.664 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/3e145033-59c1-405a-9558-4747555e8a8e and 
+2023-07-01 23:28:50.696 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/3e145033-59c1-405a-9558-4747555e8a8e
+2023-07-01 23:28:50.716 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.738 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/3e145033-59c1-405a-9558-4747555e8a8e and 
+2023-07-01 23:28:50.746 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/3e145033-59c1-405a-9558-4747555e8a8e
+2023-07-01 23:28:50.769 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:50.778 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/012107df-862f-4f16-ba94-e5c16886f005 and 
+2023-07-01 23:28:50.807 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/012107df-862f-4f16-ba94-e5c16886f005
+2023-07-01 23:28:51.040 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.325 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/012107df-862f-4f16-ba94-e5c16886f005 and 
+2023-07-01 23:28:51.395 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/012107df-862f-4f16-ba94-e5c16886f005
+2023-07-01 23:28:51.447 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.493 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/a595ff4f-9742-4263-a5ab-84ecc6c30bd7 and 
+2023-07-01 23:28:51.526 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/a595ff4f-9742-4263-a5ab-84ecc6c30bd7
+2023-07-01 23:28:51.571 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.604 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/a595ff4f-9742-4263-a5ab-84ecc6c30bd7 and 
+2023-07-01 23:28:51.637 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/a595ff4f-9742-4263-a5ab-84ecc6c30bd7
+2023-07-01 23:28:51.665 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.677 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/ef86c342-e51e-4886-bfa9-955ef3a56670 and 
+2023-07-01 23:28:51.698 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/ef86c342-e51e-4886-bfa9-955ef3a56670
+2023-07-01 23:28:51.721 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.737 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/ef86c342-e51e-4886-bfa9-955ef3a56670 and 
+2023-07-01 23:28:51.763 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/ef86c342-e51e-4886-bfa9-955ef3a56670
+2023-07-01 23:28:51.792 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.815 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/4cf316cf-40d6-4277-9f3c-750d598467f5 and 
+2023-07-01 23:28:51.832 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/4cf316cf-40d6-4277-9f3c-750d598467f5
+2023-07-01 23:28:51.863 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.888 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/4cf316cf-40d6-4277-9f3c-750d598467f5 and 
+2023-07-01 23:28:51.911 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/4cf316cf-40d6-4277-9f3c-750d598467f5
+2023-07-01 23:28:51.927 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:51.956 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2023-07-01 23:28:51.980 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2023-07-01 23:28:52.009 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:52.047 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3 and 
+2023-07-01 23:28:52.080 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/cb035f22-e7cf-4907-bd07-91cfee5240f3
+2023-07-01 23:28:52.107 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:52.123 +01:00 [DBG] Successfully processed template Persons/Edit/{personID} for CRUDExample.Controllers.PersonsController.Edit (CRUDExample) resulting in /Persons/Edit/29339209-63f5-492f-8459-754943c74abf and 
+2023-07-01 23:28:52.142 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Edit (CRUDExample)","CRUDExample.Controllers.PersonsController.Edit (CRUDExample)"] with result /Persons/Edit/29339209-63f5-492f-8459-754943c74abf
+2023-07-01 23:28:52.164 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:52.179 +01:00 [DBG] Successfully processed template Persons/Delete/{personID} for CRUDExample.Controllers.PersonsController.Delete (CRUDExample) resulting in /Persons/Delete/29339209-63f5-492f-8459-754943c74abf and 
+2023-07-01 23:28:52.208 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Delete (CRUDExample)","CRUDExample.Controllers.PersonsController.Delete (CRUDExample)"] with result /Persons/Delete/29339209-63f5-492f-8459-754943c74abf
+2023-07-01 23:28:52.330 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:52.339 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:52.367 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:52.383 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-01 23:28:52.408 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-01 23:28:52.432 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-01 23:28:52.460 +01:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-07-01 23:28:52.479 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-07-01 23:28:52.568 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-07-01 23:28:52.830 +01:00 [INF] Executed ViewResult - view Index executed in 4361.3183ms.
+2023-07-01 23:28:52.860 +01:00 [INF] after logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-01 23:28:52.876 +01:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 13431.5859ms
+2023-07-01 23:28:52.881 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-01 23:28:52.894 +01:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 01 Jul 2023 22:28:51 GMT
+Server: Kestrel
+Last-Modified: 01-07-2023 23:28
+Transfer-Encoding: chunked
+X-Custom-Key-From-Global: [Redacted]
+X-Custom-Key-From-Action-Method: [Redacted]
+X-Custom-Key-From-Controller: [Redacted]
+2023-07-01 23:28:52.929 +01:00 [INF] HTTP GET / responded 200 in 14001.7344 ms
+2023-07-01 23:28:52.979 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-07-01 23:28:53.006 +01:00 [DBG] Connection id "0HMRQGA1VQHE4" completed keep alive response.
+2023-07-01 23:28:53.026 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2023-07-01 23:28:53.041 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/ - - - 200 - text/html;+charset=utf-8 14248.5207ms
+2023-07-01 23:28:53.058 +01:00 [DBG] Connection id "0HMRQGA1VQHE5" accepted.
+2023-07-01 23:28:53.079 +01:00 [DBG] Connection id "0HMRQGA1VQHE5" started.
+2023-07-01 23:28:53.082 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/_vs/browserLink - -
+2023-07-01 23:28:53.106 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5037/_framework/aspnetcore-browser-refresh.js - -
+2023-07-01 23:28:53.124 +01:00 [DBG] Connection id "0HMRQGA1VQHE5" completed keep alive response.
+2023-07-01 23:28:53.134 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 28.1655ms
+2023-07-01 23:28:53.285 +01:00 [DBG] Connection id "0HMRQGA1VQHE4" completed keep alive response.
+2023-07-01 23:28:53.291 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5037/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 208.8072ms

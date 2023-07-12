@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "d5T2E6fwDfsCm3jUGswlxdqoDR/SRwRc/52cqhjKvog=",
+  "Source": "IActionResultDemo",
+  "BasePath": "_content/IActionResultDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "IActionResultDemo\\wwwroot",
+      "Source": "IActionResultDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\IActionResultDemo\\IActionResultDemo\\wwwroot\\",
+      "BasePath": "_content/IActionResultDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\IActionResultDemo\\IActionResultDemo\\wwwroot\\docs.pdf",
+      "SourceId": "IActionResultDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\IActionResultDemo\\IActionResultDemo\\wwwroot\\",
+      "BasePath": "_content/IActionResultDemo",
+      "RelativePath": "docs.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs.pdf"
+    }
+  ]
+}

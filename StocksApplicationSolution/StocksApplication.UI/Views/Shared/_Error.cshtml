@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Error";
+}
+
+<div class="text-center">
+    <h1>Error.</h1>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <h2 class="text-red">@ViewBag.ErrorMessage</h2>
+    }
+    else
+    {
+        <h2 class="text-red">error occurred while processing this request, Please try again.</h2>
+    }
+    <img src="~/error.svg" alt="Error_image" width="400px" style="margin-top:100px" />
+</div>

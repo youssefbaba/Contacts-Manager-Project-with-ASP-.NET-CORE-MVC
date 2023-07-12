@@ -1,0 +1,55 @@
+﻿@model PersonResponse
+
+@{
+    ViewBag.Title = "Delete Person";
+    ViewBag.CurrentUrl = "~/Persons/Index";
+}
+
+<div class="flex">
+    @{
+        await Html.RenderPartialAsync("_Breadcrumb", new ViewDataDictionary(ViewData) {
+    { "ControlerName", "Persons" }, { "ActionMethodName", "Delete" }});
+    }
+</div>
+
+<div class="form-container">
+
+    <a asp-controller="Persons" asp-action="Index" class="link-hover">Back To Persons List</a>
+    <h2 class="text-large">Delete Person</h2>
+    <h3 class="text-red">Are you sure to delete this person?</h3>
+    <form asp-controller="Persons" asp-action="Delete" method="post">
+        @* /Persons/Delete/1 *@
+
+        @* PersonName *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="PersonName" class="form-label pt">Person Name</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="PersonName" class="form-input" placeholder="Person Name" disabled="disabled">
+            </div>
+        </div>
+
+        @* Email *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Email" class="form-input" placeholder="Email" disabled="disabled">
+            </div>
+        </div>
+
+        @* PersonID *@
+        <input type="hidden" asp-for="PersonID" />
+
+        @* Submit button *@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <button type="submit" class="button button-red-back delete-button cursor-pointer">Delete</button>
+            </div>
+        </div>
+    </form>
+</div>

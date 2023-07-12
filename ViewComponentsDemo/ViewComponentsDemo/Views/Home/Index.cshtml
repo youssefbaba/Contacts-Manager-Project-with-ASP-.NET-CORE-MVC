@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<h1>Home</h1>
+<p>Welcome to home page</p>
+<button class="button button-blue-back" type="button" id="load-team-button">Load Team</button>
+@{
+    PersonGridModel personGridModelOne = new PersonGridModel()
+            {
+                GridTitle = "Persons",
+                People = new List<Person>()
+                {
+                    new Person(){ PersonName = "Sara", JobTitle = "Manager"},
+                    new Person(){ PersonName = "John", JobTitle = "Developer"},
+                    new Person(){ PersonName = "Adam", JobTitle = "Designer"}
+                }
+            };
+}
+
+@* To invoke View Component *@
+@await Component.InvokeAsync(name: "Grid", arguments: new { gridModel = personGridModelOne })
+
+@{
+    PersonGridModel personGridModelTwo = new PersonGridModel()
+            {
+                GridTitle = "Friends",
+                People = new List<Person>()
+                {
+                    new Person(){ PersonName = "Emma", JobTitle = "Designer"},
+                    new Person(){ PersonName = "Henry", JobTitle = "Manager"},
+                    new Person(){ PersonName = "Jack", JobTitle = "Developer"}
+                }
+            };
+}
+
+@* To invoke View Component *@
+@await Component.InvokeAsync(name: "Grid", arguments: new { gridModel = personGridModelTwo })
+
+<div id="load-team-content"></div>
+
+<script src="~/loadTeam.js" ></script>

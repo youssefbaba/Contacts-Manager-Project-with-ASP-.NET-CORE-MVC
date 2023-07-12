@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LayoutViewsDemo
+build_property.RootNamespace = LayoutViewsDemo
+build_property.ProjectDir = C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\LayoutViewsDemo\LayoutViewsDemo\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\LayoutViewsDemo\LayoutViewsDemo
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Products/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Products/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Products/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Shared/_MasterLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYXN0ZXJMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/Shared/_ProductsLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0c0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/LayoutViewsDemo/LayoutViewsDemo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

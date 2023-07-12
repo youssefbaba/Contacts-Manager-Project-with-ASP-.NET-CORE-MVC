@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ObjectRelations(ManyToOne)/1.0.0": {
+        "dependencies": {
+          "ClassLibrarySeven": "1.0.0"
+        },
+        "runtime": {
+          "ObjectRelations(ManyToOne).dll": {}
+        }
+      },
+      "ClassLibrarySeven/1.0.0": {
+        "runtime": {
+          "ClassLibrarySeven.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ObjectRelations(ManyToOne)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibrarySeven/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

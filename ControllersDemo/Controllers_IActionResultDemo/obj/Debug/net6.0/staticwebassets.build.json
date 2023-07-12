@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "wotalqwcTFvViJPAX7Ts9xM/CTj9xT3Az/nCPKS95gw=",
+  "Source": "Controllers_IActionResultDemo",
+  "BasePath": "_content/Controllers_IActionResultDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Controllers_IActionResultDemo\\wwwroot",
+      "Source": "Controllers_IActionResultDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Controllers_IActionResultDemo\\Controllers_IActionResultDemo\\wwwroot\\",
+      "BasePath": "_content/Controllers_IActionResultDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Controllers_IActionResultDemo\\Controllers_IActionResultDemo\\wwwroot\\docs.pdf",
+      "SourceId": "Controllers_IActionResultDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Controllers_IActionResultDemo\\Controllers_IActionResultDemo\\wwwroot\\",
+      "BasePath": "_content/Controllers_IActionResultDemo",
+      "RelativePath": "docs.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Controllers_IActionResultDemo\\Controllers_IActionResultDemo\\wwwroot\\img.jpg",
+      "SourceId": "Controllers_IActionResultDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Controllers_IActionResultDemo\\Controllers_IActionResultDemo\\wwwroot\\",
+      "BasePath": "_content/Controllers_IActionResultDemo",
+      "RelativePath": "img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img.jpg"
+    }
+  ]
+}

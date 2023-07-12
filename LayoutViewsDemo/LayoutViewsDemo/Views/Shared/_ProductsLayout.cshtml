@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<div class="flex full-size-height">
+    <div class="flex-1 grey-back">
+        SideBar
+    </div>
+    <div class="flex-3 white-back">
+        @RenderBody()  @* Content Of View Page *@
+    </div>
+</div>
+

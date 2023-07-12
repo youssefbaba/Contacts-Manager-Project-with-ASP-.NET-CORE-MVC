@@ -1,0 +1,143 @@
+﻿@model RegisterDTO
+@{
+    ViewBag.Title = "Register";
+    ViewBag.CurrentUrl = "~/Account/Register";
+    Layout = "~/Views/Account/_Layout.cshtml";
+}
+
+<div class="flex">
+    @{
+        await Html.RenderPartialAsync("_Breadcrumb", new ViewDataDictionary(ViewData) {
+    { "ControlerName", "Account" }, { "ActionMethodName", "Register" }});
+    }
+</div>
+
+<div class="form-container">
+
+    <span>Already Registered ? </span><a asp-controller="Account" asp-action="Login" class="link-hover">Sign In</a>
+    <h2 class="text-large">Register</h2>
+
+    <form asp-controller="Account" asp-action="Register" method="post">
+
+        @* PersonName *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="PersonName" class="form-label pt">Person Name</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="PersonName" class="form-input" placeholder="Person Name">
+                <span asp-validation-for="PersonName"></span>
+            </div>
+        </div>
+
+        @* Email *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Email" class="form-input" placeholder="Email">
+                <span asp-validation-for="Email"></span>
+            </div>
+        </div>
+
+        @* Phone Number *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="PhoneNumber" class="form-label pt">Phone Number</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="PhoneNumber" class="form-input" placeholder="Phone Number">
+                <span asp-validation-for="PhoneNumber"></span>
+            </div>
+        </div>
+
+        @* Password *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Password" class="form-label pt">Password</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Password" class="form-input" placeholder="Password">
+                <span asp-validation-for="Password"></span>
+            </div>
+        </div>
+
+        @* Confirm Password *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="ConfirmPassword" class="form-label pt">Confirm Password</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="ConfirmPassword" class="form-input" placeholder="Confirm Password">
+                <span asp-validation-for="ConfirmPassword"></span>
+            </div>
+        </div>
+
+        @* User Type *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label class="form-label">User Type</label>
+            </div>
+            <div class="flex-1 flex">
+                @{
+                    string[] userTypes = Enum.GetNames(typeof(UserTypeOptions));
+                }
+                @foreach (string userType in userTypes)
+                {
+                    <div>
+                        @if (userType == UserTypeOptions.User.ToString())
+                        {
+                            <input type="radio" asp-for="UserType" value="@userType" id="@userType" checked />
+                        }
+                        else
+                        {
+                            <input type="radio" asp-for="UserType" value="@userType" id="@userType" />
+                        }
+                        <label for="@userType">@userType</label>
+                    </div>
+                }
+                <span asp-validation-for="UserType" class="mt"></span>
+            </div>
+        </div>
+
+        @* Remember Me *@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <label asp-for="RememberMe">Remember Me</label>
+                <input asp-for="RememberMe" value="true">
+                <span asp-validation-for="RememberMe"></span>
+            </div>
+        </div>
+
+        @* Submit button *@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <button type="submit" class="button button-green-back cursor-pointer action-button">Register</button>
+
+                <div asp-validation-summary="All" class="text-red"></div>
+
+                @if (ViewBag.Errors != null)
+                {
+                    <ul class="text-red ml">
+                        @foreach (string error in ViewBag.Errors)
+                        {
+                            <li class="ml">@error</li>
+                        }
+                    </ul>
+                }
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" asp-fallback-test="window.jQuery" asp-fallback-src="~/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" asp-fallback-test="window.jQuery.validator" asp-fallback-src="~/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive" asp-fallback-src="~/jquery.validate.unobtrusive.min.js"></script>
+}

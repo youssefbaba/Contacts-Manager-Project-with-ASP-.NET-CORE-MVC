@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\bin\Debug\net6.0\LinqSelect.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\bin\Debug\net6.0\LinqSelect.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\bin\Debug\net6.0\LinqSelect.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\bin\Debug\net6.0\LinqSelect.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\bin\Debug\net6.0\LinqSelect.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\refint\LinqSelect.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\LinqSelect.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSelect\obj\Debug\net6.0\ref\LinqSelect.dll

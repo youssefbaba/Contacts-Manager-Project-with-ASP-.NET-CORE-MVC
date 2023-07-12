@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home";
+    ListModel listModel = new ListModel();
+    listModel.ListTitle = "Countries";
+    listModel.ListItems = new List<string>()
+                {
+                    "UK",
+                    "USA",
+                    "Frensh",
+                    "Spain",
+                    "Japan"
+                };
+}
+
+<h1>Home</h1>
+<p>Welcome to home page</p>
+<button class="button button-blue-back" type="button" id="button-load-programming-languages" >Load Programming Languages</button>
+
+@* Tag Helper to render content of partial view *@
+<partial name="_ListPartialView" model="listModel"></partial>
+
+<div class="programming-languages-content"></div>
+
+@section load_programming_languages{
+   <script src="~/LoadProgrammingLanguages.js"></script>
+}
+
+
+

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-content">
+            <div class="mb">
+                <h1 class="app-title" id="app-title-div">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    Stocks
+                </h1>
+            </div>
+            @RenderBody()
+        </div>
+    </div>
+    @RenderSection("Update_Price", required: false)
+</body>
+</html>

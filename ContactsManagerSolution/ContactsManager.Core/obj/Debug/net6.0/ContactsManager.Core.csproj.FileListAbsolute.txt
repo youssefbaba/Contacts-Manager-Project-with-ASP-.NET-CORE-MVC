@@ -1,0 +1,12 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll

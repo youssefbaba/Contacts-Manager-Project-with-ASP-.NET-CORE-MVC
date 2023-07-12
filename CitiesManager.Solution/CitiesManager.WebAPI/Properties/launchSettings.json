@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:57220",
+      "sslPort": 44370
+    }
+  },
+  "profiles": {
+    "CitiesManager.WebAPI": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      /*
+      "launchUrl": "api/cities",
+      "applicationUrl": "https://localhost:7030;http://localhost:5180", // Default URL: https://localhost:7030/api/cities
+      */
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7030;http://localhost:5180", // Default URL: https://localhost:7030/swagger
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      //"launchUrl": "api/test",
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

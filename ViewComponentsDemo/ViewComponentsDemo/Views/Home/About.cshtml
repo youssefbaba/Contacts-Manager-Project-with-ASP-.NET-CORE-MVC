@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h1>About</h1>
+<p>Welcome to about page</p>
+@{
+    PersonGridModel personGridModelOne = new PersonGridModel()
+            {
+                GridTitle = "Employees",
+                People = new List<Person>()
+                {
+                    new Person(){ PersonName = "Jim", JobTitle = "Asst.Manager"},
+                    new Person(){ PersonName = "Jones", JobTitle = "Marketer"},
+                    new Person(){ PersonName = "William", JobTitle = "Clerk"}
+                }
+            };
+}
+
+@* To invoke view component *@
+@await Component.InvokeAsync(name: "Grid", arguments: new { gridModel = personGridModelOne})
+
+
+@{
+    PersonGridModel personGridModelTwo = new PersonGridModel()
+            {
+                GridTitle = "Friends",
+                People = new List<Person>()
+                {
+                    new Person(){ PersonName = "Evelyn", JobTitle = "Clerk"},
+                    new Person(){ PersonName = "Joseph", JobTitle = "Asst.Manager"},
+                    new Person(){ PersonName = "Samuel", JobTitle = "Marketer"}
+                }
+            };
+}
+@* To invoke view component by using tag helper *@
+<vc:grid grid-model=personGridModelTwo></vc:grid>
+

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "P0RcF7QoTm3CW6FK7XYwReU6B7NXr0WM4lP43s03AiU=",
+  "Source": "ConfigurationDemo",
+  "BasePath": "_content/ConfigurationDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ConfigurationDemo\\wwwroot",
+      "Source": "ConfigurationDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ConfigurationDemo\\ConfigurationDemo\\wwwroot\\",
+      "BasePath": "_content/ConfigurationDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ConfigurationDemo\\ConfigurationDemo\\wwwroot\\StyleSheet.css",
+      "SourceId": "ConfigurationDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ConfigurationDemo\\ConfigurationDemo\\wwwroot\\",
+      "BasePath": "_content/ConfigurationDemo",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

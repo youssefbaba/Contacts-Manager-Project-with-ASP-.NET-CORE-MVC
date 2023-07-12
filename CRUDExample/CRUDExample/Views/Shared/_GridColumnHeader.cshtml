@@ -1,0 +1,65 @@
+﻿@{
+    switch (ViewBag.DisplayName)
+    {
+        case "Person Name":
+            ViewBag.With = "width:10%";
+            break;
+        case "Email":
+            ViewBag.With = "width:20%";
+            break;
+        case "Date Of Birth":
+            ViewBag.With = "width:10%";
+            break;
+        case "Age":
+            ViewBag.With = "width:5%";
+            break;
+        case "Gender":
+            ViewBag.With = "width:7%";
+            break;
+        case "Country":
+            ViewBag.With = "width:7%";
+            break;
+        case "Address":
+            ViewBag.With = "width:20%";
+            break;
+        case "Receive News Letters":
+            ViewBag.With = "width:10%";
+            break;
+        default:
+            ViewBag.With = "";
+            break;
+    }
+}
+@{
+    string TestSortBy = ViewBag.CurrentSortBy;
+    string TestSortOrder = ViewBag.CurrentSortOrder;
+}
+
+@if (ViewBag.CurrentSortBy == ViewBag.ColumnName &&
+ ViewBag.CurrentSortOrder == SortOrderOptions.ASC.ToString())
+{
+    <th style="@ViewBag.With">
+        <a href="~/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@ViewBag.ColumnName&sortOrder=@SortOrderOptions.DESC">
+            <span>@ViewBag.DisplayName</span>
+            <i class="fa-solid fa-sort-up"></i>
+        </a>
+    </th>
+}
+else if (ViewBag.CurrentSortBy == ViewBag.ColumnName &&
+ViewBag.CurrentSortOrder == SortOrderOptions.DESC.ToString())
+{
+    <th style="@ViewBag.With">
+        <a href="~/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@ViewBag.ColumnName&sortOrder=@SortOrderOptions.ASC">
+            <span>@ViewBag.DisplayName</span>
+            <i class="fa-solid fa-sort-down"></i>
+        </a>
+    </th>
+}
+else
+{
+    <th style="@ViewBag.With">
+        <a href="~/persons/index?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@ViewBag.ColumnName&sortOrder=@SortOrderOptions.ASC">
+            <span>@ViewBag.DisplayName</span>
+        </a>
+    </th>
+}

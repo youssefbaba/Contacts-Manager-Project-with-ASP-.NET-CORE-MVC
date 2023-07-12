@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "Z7kCDOIYnootp4EGlzBxybZkZ1e86rBNPtuLXZRJHxI=",
+  "Source": "Assignement_14",
+  "BasePath": "_content/Assignement_14",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Assignement_14\\wwwroot",
+      "Source": "Assignement_14",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_14\\Assignement_14\\wwwroot\\",
+      "BasePath": "_content/Assignement_14",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_14\\Assignement_14\\wwwroot\\FinnhubScript.js",
+      "SourceId": "Assignement_14",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_14\\Assignement_14\\wwwroot\\",
+      "BasePath": "_content/Assignement_14",
+      "RelativePath": "FinnhubScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FinnhubScript.js"
+    },
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_14\\Assignement_14\\wwwroot\\StyleSheet.css",
+      "SourceId": "Assignement_14",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_14\\Assignement_14\\wwwroot\\",
+      "BasePath": "_content/Assignement_14",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

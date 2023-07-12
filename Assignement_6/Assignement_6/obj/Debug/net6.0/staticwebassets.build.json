@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "LFgfmQhcSQwzJviHYP8PR90N2HcWtOudyxk5L+zks44=",
+  "Source": "Assignement_6",
+  "BasePath": "_content/Assignement_6",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Assignement_6\\wwwroot",
+      "Source": "Assignement_6",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_6\\Assignement_6\\wwwroot\\",
+      "BasePath": "_content/Assignement_6",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_6\\Assignement_6\\wwwroot\\StyleSheet.css",
+      "SourceId": "Assignement_6",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_6\\Assignement_6\\wwwroot\\",
+      "BasePath": "_content/Assignement_6",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

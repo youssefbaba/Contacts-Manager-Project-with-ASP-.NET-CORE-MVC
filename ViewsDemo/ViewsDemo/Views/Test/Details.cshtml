@@ -1,0 +1,47 @@
+﻿@model Person
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.pageTitle</title>
+    <link rel="stylesheet" href="~/StyleSheet.css">
+</head>
+<body>
+    <div class="page-content">
+        <div class="page-content">
+            <h1>Welcome To Person Details</h1>
+            <div class="box w-50">
+                <h3>@Model.PersonName</h3>
+                <table class="table w-100">
+                    <tbody>
+                        <tr>
+                            <td>Gender</td>
+                            <td>@Model.PersonGender</td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth</td>
+                            @if (Model.DateOfBirth.HasValue)
+                            {
+                                <td>@string.Format("{0:yyyy/MM/dd}", Model.DateOfBirth.Value)</td>
+                            }
+                            else
+                            {
+                                <td>Unknown</td>
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="/test">Back to persons</a>
+        </div>
+    </div>
+
+    @{
+        // Test for Global ViewImports
+        ArrayList test = new ArrayList();
+    }
+</body>
+</html>

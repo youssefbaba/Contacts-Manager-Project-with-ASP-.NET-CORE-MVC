@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ServiceContracts/1.0.0": {
+        "dependencies": {
+          "DataLayer": "1.0.0"
+        },
+        "runtime": {
+          "ServiceContracts.dll": {}
+        }
+      },
+      "DataLayer/1.0.0": {
+        "runtime": {
+          "DataLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ServiceContracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\bin\Debug\net6.0\LinqElementAt_AlementAtOrDefault.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\bin\Debug\net6.0\LinqElementAt_AlementAtOrDefault.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\bin\Debug\net6.0\LinqElementAt_AlementAtOrDefault.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\bin\Debug\net6.0\LinqElementAt_AlementAtOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\bin\Debug\net6.0\LinqElementAt_AlementAtOrDefault.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\refint\LinqElementAt_AlementAtOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\LinqElementAt_AlementAtOrDefault.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqElementAt_AlementAtOrDefault\obj\Debug\net6.0\ref\LinqElementAt_AlementAtOrDefault.dll

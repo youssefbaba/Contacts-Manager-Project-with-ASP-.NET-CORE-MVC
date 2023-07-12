@@ -1,0 +1,39 @@
+﻿@using ContactsManager.Core.Enums;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-content">
+            <div class="margin-bottom">
+                <div class="flex" id="top-bar-div">
+                    <div class="flex-1">
+                        <h1 class="app-title">
+                            Contact Manager
+                        </h1>
+                    </div>
+                    <div class="flex-1 pr" id="search-box-div">
+                        <div class="navbar account-links">
+                            <ul>
+                                @if (User.Identity != null && User.Identity.IsAuthenticated)
+                                {
+                                    <li><a asp-controller="Account" asp-action="Logout" asp-area="">Logout</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

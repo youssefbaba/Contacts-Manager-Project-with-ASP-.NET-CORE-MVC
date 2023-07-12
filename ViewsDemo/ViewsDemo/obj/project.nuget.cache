@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T1Zm1xhxy6i0CnRboCFk3T+TsbzXDm6K5ysB9wYTD9seA+ugyeBRj1r8QV3hlaih0baJMzPvkmONTRAPx+6LXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewsDemo\\ViewsDemo\\ViewsDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\YoussefBaba\\.nuget\\packages\\agecalculator\\1.3.0\\agecalculator.1.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

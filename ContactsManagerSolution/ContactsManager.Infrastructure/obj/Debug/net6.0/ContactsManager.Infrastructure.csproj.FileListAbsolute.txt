@@ -1,0 +1,17 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.CopyComplete
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\refint\ContactsManager.Infrastructure.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ref\ContactsManager.Infrastructure.dll

@@ -1,0 +1,47 @@
+﻿@model CityWeather
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather details</title>
+    <link rel="stylesheet" href="~/StyleSheet.css">
+</head>
+<body>
+    <div class="page-content">
+        @if (Model != null)
+        {
+            <h1>Weather</h1>
+            <div class="w-30 margin-auto margin-top-200">
+                <div class="box">
+                    <div class="flex-borderless">
+                        <div class="w-50">
+                            <h3>@Model.CityName</h3>
+                            <div>
+                                <b class="text-dark-grey">@string.Format("{0:dd MMM yyyy}", Model.DateAndTime)</b>
+                            </div>
+                            <div>
+                                <b class="text-dark-grey">@string.Format("{0:hh:mm tt}", Model.DateAndTime)</b>
+                            </div>
+                        </div>
+                        <div class="w-50 flex-borderless border-left">
+                            <div>
+                                <h2>@Model.TemperatureFahrenheit <sup class="text-grey">&#8457;</sup></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="/">Back to Weather home page</a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <h1 class="text-red">@ViewBag.ErrorMessage</h1>
+        }
+    </div>
+</body>
+</html>

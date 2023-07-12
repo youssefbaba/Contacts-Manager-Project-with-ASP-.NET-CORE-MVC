@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<div class="container">
+    <div class="navbar">
+        <div class="navbar-brand">AspNet Core App</div>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about-company">About</a>
+            </li>
+            <li>
+                <a href="/contact-support">Contact</a>
+            </li>
+            <li>
+                <a href="/products">All Products</a>
+            </li>
+            <li>
+                <a href="/search-products">Search Products</a>
+            </li>
+            <li>
+                <a href="/order-product">Order Product</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-content">
+        @RenderBody()  @* Content Of View Page *@
+    </div>
+
+    <div class="footer-content">
+        @RenderSection("footer_section", required: false)
+    </div>
+</div>
+@RenderSection("script_one", required:false)
+@RenderSection("script_two", required:false)
+

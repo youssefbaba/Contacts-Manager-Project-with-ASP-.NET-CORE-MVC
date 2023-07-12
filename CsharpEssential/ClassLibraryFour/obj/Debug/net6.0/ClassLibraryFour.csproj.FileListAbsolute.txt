@@ -1,0 +1,12 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\bin\Debug\net6.0\ClassLibraryFour.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\bin\Debug\net6.0\ClassLibraryFour.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\bin\Debug\net6.0\ClassLibraryFour.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ClassLibraryFour.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ClassLibraryFour.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ClassLibraryFour.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ClassLibraryFour.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ClassLibraryFour.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ClassLibraryFour.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\refint\ClassLibraryFour.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ClassLibraryFour.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\ClassLibraryFour\obj\Debug\net6.0\ref\ClassLibraryFour.dll

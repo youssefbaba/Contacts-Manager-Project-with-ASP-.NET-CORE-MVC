@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>7dba53dc-e5c8-4040-9c63-ab3ca2a813e3</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="wwwroot\error.svg" />
+		<None Include="wwwroot\FinnhubScript.js" />
+		<None Include="wwwroot\jquery.min.js" />
+		<None Include="wwwroot\jquery.validate.min.js" />
+		<None Include="wwwroot\jquery.validate.unobtrusive.min.js" />
+		<None Include="wwwroot\Rotativa\wkhtmltopdf.exe" />
+		<None Include="wwwroot\StyleSheet.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Rotativa.AspNetCore" Version="1.2.0" />
+		<PackageReference Include="Serilog" Version="3.0.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+		<PackageReference Include="Serilog.Sinks.Seq" Version="5.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\StocksApplication.Core\StocksApplication.Core.csproj" />
+		<ProjectReference Include="..\StocksApplication.Infrastructure\StocksApplication.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="StocksApp.IntegrationTests" />
+	</ItemGroup>
+
+</Project>

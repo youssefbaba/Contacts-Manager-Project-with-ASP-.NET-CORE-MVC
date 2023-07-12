@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\bin\Debug\net6.0\LinqBasics.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\bin\Debug\net6.0\LinqBasics.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\bin\Debug\net6.0\LinqBasics.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\bin\Debug\net6.0\LinqBasics.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\bin\Debug\net6.0\LinqBasics.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\refint\LinqBasics.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\LinqBasics.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqBasics\obj\Debug\net6.0\ref\LinqBasics.dll

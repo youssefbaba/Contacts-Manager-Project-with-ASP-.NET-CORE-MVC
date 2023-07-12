@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "+DAq0UKg9sU3ISCiWLk/SUJUZU3AgIA1cygsU1uLQKI=",
+  "Source": "LayoutViewsDemo",
+  "BasePath": "_content/LayoutViewsDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LayoutViewsDemo\\wwwroot",
+      "Source": "LayoutViewsDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\LayoutViewsDemo\\LayoutViewsDemo\\wwwroot\\",
+      "BasePath": "_content/LayoutViewsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\LayoutViewsDemo\\LayoutViewsDemo\\wwwroot\\script1.js",
+      "SourceId": "LayoutViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\LayoutViewsDemo\\LayoutViewsDemo\\wwwroot\\",
+      "BasePath": "_content/LayoutViewsDemo",
+      "RelativePath": "script1.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script1.js"
+    },
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\LayoutViewsDemo\\LayoutViewsDemo\\wwwroot\\script2.js",
+      "SourceId": "LayoutViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\LayoutViewsDemo\\LayoutViewsDemo\\wwwroot\\",
+      "BasePath": "_content/LayoutViewsDemo",
+      "RelativePath": "script2.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script2.js"
+    },
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\LayoutViewsDemo\\LayoutViewsDemo\\wwwroot\\StyleSheet.css",
+      "SourceId": "LayoutViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\LayoutViewsDemo\\LayoutViewsDemo\\wwwroot\\",
+      "BasePath": "_content/LayoutViewsDemo",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

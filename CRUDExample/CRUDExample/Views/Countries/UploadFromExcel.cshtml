@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Upload Countries From Excel";
+    ViewBag.CurrentUrl = "~/Countries/UploadFromExcel";
+}
+
+<div class="flex">
+    @{
+        await Html.RenderPartialAsync("_Breadcrumb", new ViewDataDictionary(ViewData) {
+    { "ControlerName", "Persons" }, { "ActionMethodName", "UploadFromExcel" }});
+    }
+</div>
+
+<div class="form-container">
+
+<h2 class="text-large">Upload Countries From Excel</h2>
+
+    <form asp-controller="Countries" asp-action="UploadFromExcel" method="post" enctype="multipart/form-data">
+        @* Excel File *@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label class="form-label pt">Choose an xlsx file</label>
+            </div>
+            <div class="flex-1">
+                <input type="file" name="excelFile" class="form-input" />
+                <div class="text-red">@ViewBag.ErrorMessage</div>
+                <div class="text-green">@ViewBag.Message</div>
+            </div>
+        </div>
+        @* Submit Button *@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <button type="submit" class="button button-green-back cursor-pointer action-button">Upload</button>
+            </div>
+        </div>
+    </form>
+</div>

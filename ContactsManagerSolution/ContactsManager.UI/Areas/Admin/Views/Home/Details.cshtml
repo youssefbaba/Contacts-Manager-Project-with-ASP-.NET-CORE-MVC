@@ -1,0 +1,35 @@
+﻿@model UserRolesViewModel
+@{
+    ViewBag.Title = "Admin Details";
+}
+
+<a asp-controller="Home" asp-action="Index" class="link-hover">Back To Admin home</a>
+<h3 class="mt">Admin Details</h3>
+<table class="table w-100 mt">
+    <thead>
+        <tr>
+            <th>Person Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Roles</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.CurrentUser?.PersonName</td>
+            <td>@Model.CurrentUser?.Email</td>
+            <td>@Model.CurrentUser?.PhoneNumber</td>
+            <td>
+                @if (Model.Roles != null)
+                {
+                    foreach (string role in Model.Roles)
+                    {
+                        <span>@role </span>
+                    }
+                }
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+

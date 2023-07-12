@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CityWeather>
+@{
+    string SetBackground(int temperature)
+    {
+        if (temperature > 74)
+        {
+            return "orange-back";
+        }
+        else
+        {
+            if (temperature > 44)
+            {
+                return "green-back";
+            }
+            else
+            {
+                return "blue-back";
+            }
+        }
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather details of all cities</title>
+    <link rel="stylesheet" href="~/StyleSheet.css">
+</head>
+<body>
+    <div class="page-content">
+        <h1>Weather</h1>
+        <div class="flex margin-top-200">
+            @foreach (CityWeather cityWeather in Model)
+            {
+                <div class="box w-30 @SetBackground(cityWeather.TemperatureFahrenheit) box-detail">
+                    <div class="flex-borderless">
+                        <div class="w-50">
+                            <h3>@cityWeather.CityName</h3>
+                            <b class="text-dark-grey">@string.Format("{0:hh:mm tt}", cityWeather.DateAndTime)</b>
+                            <div>
+                                <a href="/weather/@cityWeather.CityUniqueCode" ss>Details</a>
+                            </div>
+                        </div>
+                        <div class="w-50 flex-borderless border-left">
+                            <div>
+                                <h2>@cityWeather.TemperatureFahrenheit <sup class="text-grey">&#8457;</sup></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

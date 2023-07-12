@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StocksApplication.UI
+build_property.RootNamespace = StocksApplication.UI
+build_property.ProjectDir = C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.UI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/Shared/Components/SelectedStock/ShowSelectedStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VsZWN0ZWRTdG9ja1xTaG93U2VsZWN0ZWRTdG9jay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/Shared/_Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/Stocks/Explore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tzXEV4cGxvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/Trade/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/Trade/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVcT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/Trade/OrdersPDF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVcT3JkZXJzUERGLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YoussefBaba/Desktop/My_Computer/My-Projects/Cours/Asp_Dot_Net_Core/StocksApplicationSolution/StocksApplication.UI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

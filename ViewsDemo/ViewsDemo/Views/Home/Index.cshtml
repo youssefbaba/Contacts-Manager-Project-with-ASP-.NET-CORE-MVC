@@ -1,0 +1,64 @@
+﻿@using AgeCalculator;
+@using ViewsDemo.Models;
+@{
+    string appTitle = "Asp Dot Net Core Demo App";
+    Person person = new Person()
+            {
+                PersonName = "John Smith",
+                DateOfBirth = Convert.ToDateTime("1996-04-15"),
+                //DateOfBirth = null,
+                //PersonGender = Gender.Male
+                PersonGender = Gender.Female
+            };
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@appTitle</title>
+</head>
+<body>
+    <h1>Welcome To Home Page</h1>
+    <h3>Name : @person.PersonName.</h3>
+    @if (person.DateOfBirth.HasValue)
+    {
+        var ageCalculator = new Age(person.DateOfBirth.Value, DateTime.Today);
+        int age = ageCalculator.Years;
+        <h3>Age : @age years old.</h3>
+    }
+    else
+    {
+        <h3>Date of birth is unknown</h3>
+    }
+
+    @switch (person.PersonGender)
+    {
+        case Gender.Male:
+            <h3>November 19 is International Men's Day</h3>
+            break;
+        case Gender.Female:
+            <h3>March 08 is International Women's Day</h3>
+            break;
+        case Gender.Other:
+            <h3>March 31 is International Transgender's Day</h3>
+            break;
+    }
+
+</body>
+</html>
+
+@*
+
+// Razor Code Block
+    @{
+      C# / Html code
+    }
+
+// Razor Expression
+@Expression
+or
+@(Expression)
+
+*@

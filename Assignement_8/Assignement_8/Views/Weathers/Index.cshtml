@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CityWeather>
+@{
+    ViewBag.Title = "Weather";
+    string SetCssBackgroundColor(int temperature)
+    {
+        if (temperature > 74)
+        {
+            return "orange-back";
+        }
+        else
+        {
+            if (temperature > 44)
+            {
+                return "green-back";
+            }
+            else
+            {
+                return "blue-back";
+            }
+        }
+    }
+}
+
+<div class="margin-top-200 margin-left">
+    <div class="flex">
+        @foreach (CityWeather city in Model)
+        {
+            <div class="box cursor-pointer w-30 @SetCssBackgroundColor(city.TemperatureFahrenheit)">
+                @{
+                    await Html.RenderPartialAsync(partialViewName: "_CityPartialView", model: city);
+                }
+            </div>
+        }
+    </div>
+</div>

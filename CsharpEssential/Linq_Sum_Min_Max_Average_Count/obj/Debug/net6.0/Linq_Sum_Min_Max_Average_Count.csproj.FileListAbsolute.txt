@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\bin\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\bin\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\bin\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\bin\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\bin\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\refint\Linq_Sum_Min_Max_Average_Count.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\Linq_Sum_Min_Max_Average_Count.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\Linq_Sum_Min_Max_Average_Count\obj\Debug\net6.0\ref\Linq_Sum_Min_Max_Average_Count.dll

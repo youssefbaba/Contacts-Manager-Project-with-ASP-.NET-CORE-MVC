@@ -1,0 +1,1384 @@
+2023-07-04 16:05:13.189 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-04 16:05:13.460 +01:00 [DBG] Hosting starting
+2023-07-04 16:05:13.486 +01:00 [INF] User profile is available. Using 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-04 16:05:13.492 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-086a6081-eb03-4bb1-a34d-5120bae08b88.xml'.
+2023-07-04 16:05:13.495 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-a87a6934-b999-4d05-b268-66210133ed23.xml'.
+2023-07-04 16:05:13.529 +01:00 [DBG] Found key {086a6081-eb03-4bb1-a34d-5120bae08b88}.
+2023-07-04 16:05:13.534 +01:00 [DBG] Found key {a87a6934-b999-4d05-b268-66210133ed23}.
+2023-07-04 16:05:13.571 +01:00 [DBG] Considering key {a87a6934-b999-4d05-b268-66210133ed23} with expiration date 2023-08-27 09:39:32Z as default key.
+2023-07-04 16:05:13.575 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 16:05:13.585 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-07-04 16:05:13.601 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 16:05:13.614 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-07-04 16:05:13.619 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-07-04 16:05:13.628 +01:00 [DBG] Using key {a87a6934-b999-4d05-b268-66210133ed23} as the default key.
+2023-07-04 16:05:13.630 +01:00 [DBG] Key ring with default key {a87a6934-b999-4d05-b268-66210133ed23} was loaded during application startup.
+2023-07-04 16:05:13.651 +01:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-07-04 16:05:13.651 +01:00 [DBG] Hosting started
+2023-07-04 16:05:13.776 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - -
+2023-07-04 16:05:13.785 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-04 16:05:13.802 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Host: localhost
+2023-07-04 16:05:13.805 +01:00 [DBG] The request path /Persons/Index does not match a supported file type
+2023-07-04 16:05:13.881 +01:00 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2023-07-04 16:05:13.894 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern 'Persons/Index' is valid for the request path '/Persons/Index'
+2023-07-04 16:05:13.895 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 16:05:13.897 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 16:05:14.015 +01:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-07-04 16:05:14.018 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-04 16:05:14.019 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-04 16:05:14.020 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 1)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter (Order: 4)"]
+2023-07-04 16:05:14.021 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-04 16:05:14.021 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilters.PersonsAlwaysRunResultFilter","CRUDExample.Filters.ResultFilters.PersonsListResultFilter"]
+2023-07-04 16:05:14.024 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 16:05:14.335 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-04 16:05:14.425 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 16:05:14.431 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-07-04 16:05:14.433 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 16:05:14.434 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-07-04 16:05:14.435 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 16:05:14.435 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 16:05:14.435 +01:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-07-04 16:05:14.449 +01:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-07-04 16:05:14.452 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-07-04 16:05:14.452 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-07-04 16:05:14.453 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-07-04 16:05:14.453 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 16:05:14.453 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 16:05:14.453 +01:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-07-04 16:05:14.453 +01:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-07-04 16:05:14.453 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-07-04 16:05:14.454 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 16:05:14.454 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-07-04 16:05:14.454 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 16:05:14.454 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 16:05:14.454 +01:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-07-04 16:05:14.454 +01:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-07-04 16:05:14.455 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 16:05:14.455 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-07-04 16:05:14.455 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 16:05:14.455 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 16:05:14.455 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 16:05:14.455 +01:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 16:05:14.455 +01:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 16:05:14.459 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 16:05:14.460 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 16:05:14.477 +01:00 [INF] Before logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 16:05:14.478 +01:00 [DBG] Order: 4
+2023-07-04 16:05:14.479 +01:00 [INF] Index action method of PersonsController
+2023-07-04 16:05:14.479 +01:00 [DBG] searchBy: null, searchString: null, sortBy: PersonName, sortOrder: "ASC"
+2023-07-04 16:05:14.480 +01:00 [INF] GetAllPersons method of PersonsService
+2023-07-04 16:05:14.482 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 16:05:16.735 +01:00 [INF] Entity Framework Core 6.0.7 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.7' with options: StoreName=DatabaseForTesting 
+2023-07-04 16:05:16.871 +01:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2023-07-04 16:05:17.089 +01:00 [DBG] Including navigation: 'Person.Country'.
+2023-07-04 16:05:17.401 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new QueryingEnumerable<Person>(
+    queryContext, 
+    InMemoryQueryExpression.LeftJoin<ValueBuffer, ValueBuffer, Guid?, ValueBuffer>(
+        outer: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Person), 
+        inner: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Country), 
+        outerKeySelector: valueBuffer => ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+            valueBuffer: valueBuffer, 
+            index: 2, 
+            property: Property: Person.CountryID (Guid?) FK Index), 
+        innerKeySelector: valueBuffer => (Guid?)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+        resultSelector: (outer, inner) => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: outer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: outer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: outer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: inner, 
+                index: 0, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: inner, 
+                index: 1, 
+                property: Property: Country.CountryName (string)) 
+        }), 
+        defaultValue: ValueBuffer)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        }))
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        })), 
+    Func<QueryContext, ValueBuffer, Person>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    True
+)'
+2023-07-04 16:05:17.446 +01:00 [INF] GetFilteredPersons method of PersonsService
+2023-07-04 16:05:17.447 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 16:05:17.450 +01:00 [INF] GetSortedPersons method of PersonsService
+2023-07-04 16:05:17.451 +01:00 [INF] After logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 16:05:17.451 +01:00 [DBG] Order: 4
+2023-07-04 16:05:17.452 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 16:05:17.476 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 16:05:17.481 +01:00 [INF] before logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPDF.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Breadcrumb.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Error.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-07-04 16:05:17.486 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-07-04 16:05:17.487 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-07-04 16:05:17.487 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-07-04 16:05:17.496 +01:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2023-07-04 16:05:17.505 +01:00 [INF] Executing ViewResult, running view Index.
+2023-07-04 16:05:17.517 +01:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 9.1081ms.
+2023-07-04 16:05:17.686 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:17.715 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 16:05:17.717 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 16:05:17.750 +01:00 [DBG] View lookup cache miss for view '_Breadcrumb' in controller 'Persons'.
+2023-07-04 16:05:17.823 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:17.823 +01:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2023-07-04 16:05:17.824 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2023-07-04 16:05:17.828 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:17.829 +01:00 [DBG] Successfully processed template Persons/PersonsPDF for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons/PersonsPDF and 
+2023-07-04 16:05:17.829 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons/PersonsPDF
+2023-07-04 16:05:17.831 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:17.831 +01:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2023-07-04 16:05:17.831 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2023-07-04 16:05:17.832 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:17.832 +01:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2023-07-04 16:05:17.833 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2023-07-04 16:05:17.900 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:17.901 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 16:05:17.901 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 16:05:17.902 +01:00 [DBG] View lookup cache miss for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.000 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.019 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.020 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.024 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.029 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.030 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.030 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 16:05:18.068 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:18.069 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:18.098 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:18.098 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 16:05:18.098 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 16:05:18.103 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 16:05:18.103 +01:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-07-04 16:05:18.103 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-07-04 16:05:18.133 +01:00 [INF] Executed ViewResult - view Index executed in 637.8426ms.
+2023-07-04 16:05:18.134 +01:00 [INF] after logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 16:05:18.137 +01:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 4114.9573ms
+2023-07-04 16:05:18.137 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 16:05:18.138 +01:00 [INF] Response:
+StatusCode: 200
+X-Custom-Key-From-Global: [Redacted]
+X-Custom-Key-From-Action-Method: [Redacted]
+X-Custom-Key-From-Controller: [Redacted]
+Content-Type: text/html; charset=utf-8
+Last-Modified: 04-07-2023 16:05
+2023-07-04 16:05:18.144 +01:00 [INF] HTTP GET /Persons/Index responded 200 in 4349.2565 ms
+2023-07-04 16:05:18.164 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2023-07-04 16:05:18.168 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - - - 200 - text/html;+charset=utf-8 4402.2486ms
+2023-07-04 16:05:18.321 +01:00 [DBG] Hosting stopping
+2023-07-04 16:05:18.322 +01:00 [DBG] Hosting stopped
+2023-07-04 16:05:18.322 +01:00 [DBG] Hosting stopping
+2023-07-04 16:05:18.323 +01:00 [DBG] Hosting stopped
+2023-07-04 19:14:44.260 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-04 19:14:44.444 +01:00 [DBG] Hosting starting
+2023-07-04 19:14:44.466 +01:00 [INF] User profile is available. Using 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-04 19:14:44.472 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-086a6081-eb03-4bb1-a34d-5120bae08b88.xml'.
+2023-07-04 19:14:44.474 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-a87a6934-b999-4d05-b268-66210133ed23.xml'.
+2023-07-04 19:14:44.489 +01:00 [DBG] Found key {086a6081-eb03-4bb1-a34d-5120bae08b88}.
+2023-07-04 19:14:44.492 +01:00 [DBG] Found key {a87a6934-b999-4d05-b268-66210133ed23}.
+2023-07-04 19:14:44.516 +01:00 [DBG] Considering key {a87a6934-b999-4d05-b268-66210133ed23} with expiration date 2023-08-27 09:39:32Z as default key.
+2023-07-04 19:14:44.519 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 19:14:44.528 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-07-04 19:14:44.531 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 19:14:44.544 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-07-04 19:14:44.550 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-07-04 19:14:44.560 +01:00 [DBG] Using key {a87a6934-b999-4d05-b268-66210133ed23} as the default key.
+2023-07-04 19:14:44.561 +01:00 [DBG] Key ring with default key {a87a6934-b999-4d05-b268-66210133ed23} was loaded during application startup.
+2023-07-04 19:14:44.581 +01:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-07-04 19:14:44.581 +01:00 [DBG] Hosting started
+2023-07-04 19:14:44.675 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - -
+2023-07-04 19:14:44.680 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-04 19:14:44.692 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Host: localhost
+2023-07-04 19:14:44.695 +01:00 [DBG] The request path /Persons/Index does not match a supported file type
+2023-07-04 19:14:44.767 +01:00 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2023-07-04 19:14:44.781 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern 'Persons/Index' is valid for the request path '/Persons/Index'
+2023-07-04 19:14:44.782 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 19:14:44.784 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 19:14:44.863 +01:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-07-04 19:14:44.864 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-04 19:14:44.865 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-04 19:14:44.866 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 1)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter (Order: 4)"]
+2023-07-04 19:14:44.866 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-04 19:14:44.866 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilters.PersonsAlwaysRunResultFilter","CRUDExample.Filters.ResultFilters.PersonsListResultFilter"]
+2023-07-04 19:14:44.869 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 19:14:45.107 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-04 19:14:45.171 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 19:14:45.176 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-07-04 19:14:45.178 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 19:14:45.179 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:14:45.179 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:14:45.180 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:14:45.180 +01:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-07-04 19:14:45.196 +01:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:14:45.199 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-07-04 19:14:45.200 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-07-04 19:14:45.200 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-07-04 19:14:45.200 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 19:14:45.200 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 19:14:45.200 +01:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-07-04 19:14:45.201 +01:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-07-04 19:14:45.201 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-07-04 19:14:45.201 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 19:14:45.201 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:14:45.201 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:14:45.201 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:14:45.202 +01:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-07-04 19:14:45.202 +01:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:14:45.203 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 19:14:45.203 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-07-04 19:14:45.204 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:14:45.204 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:14:45.204 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:14:45.205 +01:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 19:14:45.205 +01:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:14:45.208 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:14:45.208 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:14:45.232 +01:00 [INF] Before logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 19:14:45.232 +01:00 [DBG] Order: 4
+2023-07-04 19:14:45.233 +01:00 [INF] Index action method of PersonsController
+2023-07-04 19:14:45.233 +01:00 [DBG] searchBy: null, searchString: null, sortBy: PersonName, sortOrder: "ASC"
+2023-07-04 19:14:45.234 +01:00 [INF] GetAllPersons method of PersonsGetterService
+2023-07-04 19:14:45.236 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 19:14:46.701 +01:00 [INF] Entity Framework Core 6.0.7 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.7' with options: StoreName=DatabaseForTesting 
+2023-07-04 19:14:46.801 +01:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2023-07-04 19:14:47.017 +01:00 [DBG] Including navigation: 'Person.Country'.
+2023-07-04 19:14:47.352 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new QueryingEnumerable<Person>(
+    queryContext, 
+    InMemoryQueryExpression.LeftJoin<ValueBuffer, ValueBuffer, Guid?, ValueBuffer>(
+        outer: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Person), 
+        inner: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Country), 
+        outerKeySelector: valueBuffer => ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+            valueBuffer: valueBuffer, 
+            index: 2, 
+            property: Property: Person.CountryID (Guid?) FK Index), 
+        innerKeySelector: valueBuffer => (Guid?)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+        resultSelector: (outer, inner) => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: outer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: outer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: outer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: inner, 
+                index: 0, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: inner, 
+                index: 1, 
+                property: Property: Country.CountryName (string)) 
+        }), 
+        defaultValue: ValueBuffer)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        }))
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        })), 
+    Func<QueryContext, ValueBuffer, Person>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    True
+)'
+2023-07-04 19:14:47.392 +01:00 [INF] GetFilteredPersons method of PersonsGetterService
+2023-07-04 19:14:47.392 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 19:14:47.395 +01:00 [INF] GetSortedPersons method of PersonsSorterService
+2023-07-04 19:14:47.396 +01:00 [INF] After logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 19:14:47.396 +01:00 [DBG] Order: 4
+2023-07-04 19:14:47.396 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:14:47.397 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:14:47.400 +01:00 [INF] before logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 19:14:47.407 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-07-04 19:14:47.407 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-07-04 19:14:47.407 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-07-04 19:14:47.408 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-07-04 19:14:47.408 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-07-04 19:14:47.408 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPDF.cshtml'.
+2023-07-04 19:14:47.408 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Breadcrumb.cshtml'.
+2023-07-04 19:14:47.408 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Error.cshtml'.
+2023-07-04 19:14:47.409 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-07-04 19:14:47.409 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-07-04 19:14:47.409 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-07-04 19:14:47.409 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-07-04 19:14:47.417 +01:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2023-07-04 19:14:47.427 +01:00 [INF] Executing ViewResult, running view Index.
+2023-07-04 19:14:47.438 +01:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 10.3173ms.
+2023-07-04 19:14:47.542 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.557 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 19:14:47.559 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 19:14:47.579 +01:00 [DBG] View lookup cache miss for view '_Breadcrumb' in controller 'Persons'.
+2023-07-04 19:14:47.638 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.639 +01:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2023-07-04 19:14:47.639 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2023-07-04 19:14:47.643 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.643 +01:00 [DBG] Successfully processed template Persons/PersonsPDF for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons/PersonsPDF and 
+2023-07-04 19:14:47.643 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons/PersonsPDF
+2023-07-04 19:14:47.644 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.645 +01:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2023-07-04 19:14:47.645 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2023-07-04 19:14:47.646 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.646 +01:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2023-07-04 19:14:47.646 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2023-07-04 19:14:47.684 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.684 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 19:14:47.685 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 19:14:47.686 +01:00 [DBG] View lookup cache miss for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.794 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.811 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.811 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.814 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.818 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.819 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.819 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:14:47.849 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.850 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.858 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.858 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 19:14:47.858 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 19:14:47.862 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:14:47.862 +01:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-07-04 19:14:47.862 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-07-04 19:14:47.885 +01:00 [INF] Executed ViewResult - view Index executed in 467.9716ms.
+2023-07-04 19:14:47.885 +01:00 [INF] after logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 19:14:47.887 +01:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 3020.1782ms
+2023-07-04 19:14:47.888 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 19:14:47.888 +01:00 [INF] Response:
+StatusCode: 200
+X-Custom-Key-From-Global: [Redacted]
+X-Custom-Key-From-Action-Method: [Redacted]
+X-Custom-Key-From-Controller: [Redacted]
+Content-Type: text/html; charset=utf-8
+Last-Modified: 04-07-2023 19:14
+2023-07-04 19:14:47.893 +01:00 [INF] HTTP GET /Persons/Index responded 200 in 3206.1555 ms
+2023-07-04 19:14:47.911 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2023-07-04 19:14:47.915 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - - - 200 - text/html;+charset=utf-8 3250.2027ms
+2023-07-04 19:14:48.034 +01:00 [DBG] Hosting stopping
+2023-07-04 19:14:48.035 +01:00 [DBG] Hosting stopped
+2023-07-04 19:14:48.035 +01:00 [DBG] Hosting stopping
+2023-07-04 19:14:48.036 +01:00 [DBG] Hosting stopped
+2023-07-04 19:34:39.438 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-04 19:34:39.632 +01:00 [DBG] Hosting starting
+2023-07-04 19:34:39.655 +01:00 [INF] User profile is available. Using 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-04 19:34:39.661 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-086a6081-eb03-4bb1-a34d-5120bae08b88.xml'.
+2023-07-04 19:34:39.663 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-a87a6934-b999-4d05-b268-66210133ed23.xml'.
+2023-07-04 19:34:39.679 +01:00 [DBG] Found key {086a6081-eb03-4bb1-a34d-5120bae08b88}.
+2023-07-04 19:34:39.682 +01:00 [DBG] Found key {a87a6934-b999-4d05-b268-66210133ed23}.
+2023-07-04 19:34:39.707 +01:00 [DBG] Considering key {a87a6934-b999-4d05-b268-66210133ed23} with expiration date 2023-08-27 09:39:32Z as default key.
+2023-07-04 19:34:39.710 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 19:34:39.723 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-07-04 19:34:39.726 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 19:34:39.738 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-07-04 19:34:39.744 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-07-04 19:34:39.752 +01:00 [DBG] Using key {a87a6934-b999-4d05-b268-66210133ed23} as the default key.
+2023-07-04 19:34:39.754 +01:00 [DBG] Key ring with default key {a87a6934-b999-4d05-b268-66210133ed23} was loaded during application startup.
+2023-07-04 19:34:39.785 +01:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-07-04 19:34:39.786 +01:00 [DBG] Hosting started
+2023-07-04 19:34:39.937 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - -
+2023-07-04 19:34:39.955 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-04 19:34:39.984 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Host: localhost
+2023-07-04 19:34:39.990 +01:00 [DBG] The request path /Persons/Index does not match a supported file type
+2023-07-04 19:34:40.095 +01:00 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2023-07-04 19:34:40.106 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern 'Persons/Index' is valid for the request path '/Persons/Index'
+2023-07-04 19:34:40.107 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 19:34:40.109 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 19:34:40.215 +01:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-07-04 19:34:40.216 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-04 19:34:40.217 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-04 19:34:40.217 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 1)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter (Order: 4)"]
+2023-07-04 19:34:40.218 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-04 19:34:40.218 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilters.PersonsAlwaysRunResultFilter","CRUDExample.Filters.ResultFilters.PersonsListResultFilter"]
+2023-07-04 19:34:40.219 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 19:34:40.457 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-04 19:34:40.516 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 19:34:40.522 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-07-04 19:34:40.526 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 19:34:40.527 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:34:40.528 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:34:40.528 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:34:40.528 +01:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-07-04 19:34:40.544 +01:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-07-04 19:34:40.547 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-07-04 19:34:40.548 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-07-04 19:34:40.548 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-07-04 19:34:40.548 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 19:34:40.548 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 19:34:40.548 +01:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-07-04 19:34:40.549 +01:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-07-04 19:34:40.549 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-07-04 19:34:40.549 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 19:34:40.550 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:34:40.550 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:34:40.550 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:34:40.550 +01:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-07-04 19:34:40.551 +01:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-07-04 19:34:40.551 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 19:34:40.551 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-07-04 19:34:40.552 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:34:40.552 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:34:40.552 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:34:40.552 +01:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 19:34:40.553 +01:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 19:34:40.557 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:34:40.557 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:34:40.575 +01:00 [INF] Before logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 19:34:40.575 +01:00 [DBG] Order: 4
+2023-07-04 19:34:40.576 +01:00 [INF] Index action method of PersonsController
+2023-07-04 19:34:40.577 +01:00 [DBG] searchBy: null, searchString: null, sortBy: PersonName, sortOrder: "ASC"
+2023-07-04 19:34:40.577 +01:00 [INF] GetAllPersons method of PersonsGetterService
+2023-07-04 19:34:40.582 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 19:34:42.240 +01:00 [INF] Entity Framework Core 6.0.7 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.7' with options: StoreName=DatabaseForTesting 
+2023-07-04 19:34:42.373 +01:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2023-07-04 19:34:42.654 +01:00 [DBG] Including navigation: 'Person.Country'.
+2023-07-04 19:34:43.037 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new QueryingEnumerable<Person>(
+    queryContext, 
+    InMemoryQueryExpression.LeftJoin<ValueBuffer, ValueBuffer, Guid?, ValueBuffer>(
+        outer: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Person), 
+        inner: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Country), 
+        outerKeySelector: valueBuffer => ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+            valueBuffer: valueBuffer, 
+            index: 2, 
+            property: Property: Person.CountryID (Guid?) FK Index), 
+        innerKeySelector: valueBuffer => (Guid?)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+        resultSelector: (outer, inner) => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: outer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: outer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: outer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: inner, 
+                index: 0, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: inner, 
+                index: 1, 
+                property: Property: Country.CountryName (string)) 
+        }), 
+        defaultValue: ValueBuffer)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        }))
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        })), 
+    Func<QueryContext, ValueBuffer, Person>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    True
+)'
+2023-07-04 19:34:43.085 +01:00 [INF] GetFilteredPersons method of PersonsGetterService
+2023-07-04 19:34:43.085 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 19:34:43.087 +01:00 [INF] GetSortedPersons method of PersonsSorterService
+2023-07-04 19:34:43.088 +01:00 [INF] After logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 19:34:43.088 +01:00 [DBG] Order: 4
+2023-07-04 19:34:43.089 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:34:43.089 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 19:34:43.093 +01:00 [INF] before logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 19:34:43.099 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-07-04 19:34:43.100 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-07-04 19:34:43.100 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-07-04 19:34:43.101 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-07-04 19:34:43.101 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-07-04 19:34:43.101 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPDF.cshtml'.
+2023-07-04 19:34:43.101 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Breadcrumb.cshtml'.
+2023-07-04 19:34:43.101 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Error.cshtml'.
+2023-07-04 19:34:43.101 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-07-04 19:34:43.101 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-07-04 19:34:43.102 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-07-04 19:34:43.102 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-07-04 19:34:43.110 +01:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2023-07-04 19:34:43.120 +01:00 [INF] Executing ViewResult, running view Index.
+2023-07-04 19:34:43.133 +01:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 12.0018ms.
+2023-07-04 19:34:43.245 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.260 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 19:34:43.261 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 19:34:43.284 +01:00 [DBG] View lookup cache miss for view '_Breadcrumb' in controller 'Persons'.
+2023-07-04 19:34:43.344 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.345 +01:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2023-07-04 19:34:43.345 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2023-07-04 19:34:43.349 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.350 +01:00 [DBG] Successfully processed template Persons/PersonsPDF for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons/PersonsPDF and 
+2023-07-04 19:34:43.350 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons/PersonsPDF
+2023-07-04 19:34:43.351 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.352 +01:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2023-07-04 19:34:43.352 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2023-07-04 19:34:43.353 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.353 +01:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2023-07-04 19:34:43.354 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2023-07-04 19:34:43.396 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.396 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 19:34:43.396 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 19:34:43.398 +01:00 [DBG] View lookup cache miss for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.481 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.499 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.500 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.504 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.507 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.508 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.508 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 19:34:43.538 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.540 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.547 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.548 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 19:34:43.548 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 19:34:43.552 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 19:34:43.553 +01:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-07-04 19:34:43.553 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-07-04 19:34:43.576 +01:00 [INF] Executed ViewResult - view Index executed in 467.8082ms.
+2023-07-04 19:34:43.578 +01:00 [INF] after logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 19:34:43.580 +01:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 3361.854ms
+2023-07-04 19:34:43.581 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 19:34:43.582 +01:00 [INF] Response:
+StatusCode: 200
+X-Custom-Key-From-Global: [Redacted]
+X-Custom-Key-From-Action-Method: [Redacted]
+X-Custom-Key-From-Controller: [Redacted]
+Content-Type: text/html; charset=utf-8
+Last-Modified: 04-07-2023 19:34
+2023-07-04 19:34:43.586 +01:00 [INF] HTTP GET /Persons/Index responded 200 in 3621.2686 ms
+2023-07-04 19:34:43.624 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2023-07-04 19:34:43.634 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - - - 200 - text/html;+charset=utf-8 3731.5027ms
+2023-07-04 19:34:43.754 +01:00 [DBG] Hosting stopping
+2023-07-04 19:34:43.755 +01:00 [DBG] Hosting stopping
+2023-07-04 19:34:43.755 +01:00 [DBG] Hosting stopped
+2023-07-04 19:34:43.756 +01:00 [DBG] Hosting stopped
+2023-07-04 20:13:31.623 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-07-04 20:13:31.854 +01:00 [DBG] Hosting starting
+2023-07-04 20:13:31.876 +01:00 [INF] User profile is available. Using 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-04 20:13:31.883 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-086a6081-eb03-4bb1-a34d-5120bae08b88.xml'.
+2023-07-04 20:13:31.885 +01:00 [DBG] Reading data from file 'C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys\key-a87a6934-b999-4d05-b268-66210133ed23.xml'.
+2023-07-04 20:13:31.901 +01:00 [DBG] Found key {086a6081-eb03-4bb1-a34d-5120bae08b88}.
+2023-07-04 20:13:31.904 +01:00 [DBG] Found key {a87a6934-b999-4d05-b268-66210133ed23}.
+2023-07-04 20:13:31.929 +01:00 [DBG] Considering key {a87a6934-b999-4d05-b268-66210133ed23} with expiration date 2023-08-27 09:39:32Z as default key.
+2023-07-04 20:13:31.932 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 20:13:31.943 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-07-04 20:13:31.946 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-07-04 20:13:31.962 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-07-04 20:13:31.971 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-07-04 20:13:31.980 +01:00 [DBG] Using key {a87a6934-b999-4d05-b268-66210133ed23} as the default key.
+2023-07-04 20:13:31.982 +01:00 [DBG] Key ring with default key {a87a6934-b999-4d05-b268-66210133ed23} was loaded during application startup.
+2023-07-04 20:13:32.001 +01:00 [DBG] Loaded hosting startup assembly CRUDExample
+2023-07-04 20:13:32.001 +01:00 [DBG] Hosting started
+2023-07-04 20:13:32.088 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost/Persons/Index - -
+2023-07-04 20:13:32.095 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-07-04 20:13:32.121 +01:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Host: localhost
+2023-07-04 20:13:32.126 +01:00 [DBG] The request path /Persons/Index does not match a supported file type
+2023-07-04 20:13:32.215 +01:00 [DBG] 1 candidate(s) found for the request path '/Persons/Index'
+2023-07-04 20:13:32.231 +01:00 [DBG] Endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)' with route pattern 'Persons/Index' is valid for the request path '/Persons/Index'
+2023-07-04 20:13:32.233 +01:00 [DBG] Request matched endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 20:13:32.235 +01:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 20:13:32.312 +01:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2023-07-04 20:13:32.313 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-07-04 20:13:32.313 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-07-04 20:13:32.314 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 3)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 1)","CRUDExample.Filters.ActionFilters.ResponseHeaderActionFilter (Order: 2)","CRUDExample.Filters.ActionFilters.PersonsListActionFilter (Order: 4)"]
+2023-07-04 20:13:32.314 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-07-04 20:13:32.315 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","CRUDExample.Filters.ResultFilters.PersonsAlwaysRunResultFilter","CRUDExample.Filters.ResultFilters.PersonsListResultFilter"]
+2023-07-04 20:13:32.318 +01:00 [DBG] Executing controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 20:13:32.595 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-07-04 20:13:32.653 +01:00 [DBG] Executed controller factory for controller CRUDExample.Controllers.PersonsController (CRUDExample)
+2023-07-04 20:13:32.657 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' ...
+2023-07-04 20:13:32.660 +01:00 [DBG] Attempting to bind parameter 'searchBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 20:13:32.661 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchBy' of type 'System.String'.
+2023-07-04 20:13:32.662 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 20:13:32.662 +01:00 [DBG] Done attempting to bind parameter 'searchBy' of type 'System.String'.
+2023-07-04 20:13:32.662 +01:00 [DBG] Attempting to validate the bound parameter 'searchBy' of type 'System.String' ...
+2023-07-04 20:13:32.681 +01:00 [DBG] Done attempting to validate the bound parameter 'searchBy' of type 'System.String'.
+2023-07-04 20:13:32.689 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' ...
+2023-07-04 20:13:32.690 +01:00 [DBG] Attempting to bind parameter 'searchString' of type 'System.String' using the name '' in request data ...
+2023-07-04 20:13:32.691 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchString' of type 'System.String'.
+2023-07-04 20:13:32.692 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 20:13:32.692 +01:00 [DBG] Done attempting to bind parameter 'searchString' of type 'System.String'.
+2023-07-04 20:13:32.692 +01:00 [DBG] Attempting to validate the bound parameter 'searchString' of type 'System.String' ...
+2023-07-04 20:13:32.693 +01:00 [DBG] Done attempting to validate the bound parameter 'searchString' of type 'System.String'.
+2023-07-04 20:13:32.694 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2023-07-04 20:13:32.694 +01:00 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name '' in request data ...
+2023-07-04 20:13:32.694 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortBy' of type 'System.String'.
+2023-07-04 20:13:32.695 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 20:13:32.695 +01:00 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2023-07-04 20:13:32.695 +01:00 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2023-07-04 20:13:32.696 +01:00 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2023-07-04 20:13:32.697 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 20:13:32.697 +01:00 [DBG] Attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' using the name '' in request data ...
+2023-07-04 20:13:32.698 +01:00 [DBG] Could not find a value in the request with name '' for binding parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 20:13:32.700 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 20:13:32.700 +01:00 [DBG] Done attempting to bind parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 20:13:32.701 +01:00 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions' ...
+2023-07-04 20:13:32.702 +01:00 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'ServiceContracts.Enums.SortOrderOptions'.
+2023-07-04 20:13:32.708 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 20:13:32.708 +01:00 [INF] before logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 20:13:32.736 +01:00 [INF] Before logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 20:13:32.737 +01:00 [DBG] Order: 4
+2023-07-04 20:13:32.738 +01:00 [INF] Index action method of PersonsController
+2023-07-04 20:13:32.738 +01:00 [DBG] searchBy: null, searchString: null, sortBy: PersonName, sortOrder: "ASC"
+2023-07-04 20:13:32.739 +01:00 [INF] GetAllPersons method of PersonsGetterService
+2023-07-04 20:13:32.742 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 20:13:34.234 +01:00 [INF] Entity Framework Core 6.0.7 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.7' with options: StoreName=DatabaseForTesting 
+2023-07-04 20:13:34.331 +01:00 [DBG] Compiling query expression: 
+'DbSet<Person>()
+    .Include("Country")'
+2023-07-04 20:13:34.561 +01:00 [DBG] Including navigation: 'Person.Country'.
+2023-07-04 20:13:34.954 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new QueryingEnumerable<Person>(
+    queryContext, 
+    InMemoryQueryExpression.LeftJoin<ValueBuffer, ValueBuffer, Guid?, ValueBuffer>(
+        outer: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Person), 
+        inner: InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Country), 
+        outerKeySelector: valueBuffer => ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+            valueBuffer: valueBuffer, 
+            index: 2, 
+            property: Property: Person.CountryID (Guid?) FK Index), 
+        innerKeySelector: valueBuffer => (Guid?)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+        resultSelector: (outer, inner) => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: outer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: outer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: outer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: outer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: outer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: inner, 
+                index: 0, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: inner, 
+                index: 1, 
+                property: Property: Country.CountryName (string)) 
+        }), 
+        defaultValue: ValueBuffer)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        }))
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid>(
+                valueBuffer: valueBuffer, 
+                index: 0, 
+                property: Property: Person.PersonID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 1, 
+                property: Property: Person.Address (string) MaxLength(200)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 2, 
+                property: Property: Person.CountryID (Guid?) FK Index), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<DateTime?>(
+                valueBuffer: valueBuffer, 
+                index: 3, 
+                property: Property: Person.DateOfBirth (DateTime?)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 4, 
+                property: Property: Person.Email (string) MaxLength(40)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 5, 
+                property: Property: Person.Gender (string) MaxLength(10)), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 6, 
+                property: Property: Person.PersonName (string) MaxLength(40)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 7, 
+                property: Property: Person.ReceiveNewsLetters (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 8, 
+                property: Property: Person.SSN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+                valueBuffer: valueBuffer, 
+                index: 9, 
+                property: Property: Person.SSNIsChanged (bool) Required), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 10, 
+                property: Property: Person.TIN (string)), 
+            (object)ExpressionExtensions.ValueBufferTryReadValue<Guid?>(
+                valueBuffer: valueBuffer, 
+                index: 11, 
+                property: Property: Country.CountryID (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            ExpressionExtensions.ValueBufferTryReadValue<string>(
+                valueBuffer: valueBuffer, 
+                index: 12, 
+                property: Property: Country.CountryName (string)) 
+        })), 
+    Func<QueryContext, ValueBuffer, Person>, 
+    Entities.ApplicationDbContext, 
+    False, 
+    True
+)'
+2023-07-04 20:13:35.006 +01:00 [INF] GetFilteredPersons method of PersonsGetterService
+2023-07-04 20:13:35.007 +01:00 [INF] GetAllPersons method of PersonsRepository
+2023-07-04 20:13:35.010 +01:00 [INF] GetSortedPersons method of PersonsSorterService
+2023-07-04 20:13:35.011 +01:00 [INF] After logic of PersonsListActionFilter.OnActionExecutionAsync method
+2023-07-04 20:13:35.011 +01:00 [DBG] Order: 4
+2023-07-04 20:13:35.012 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 20:13:35.012 +01:00 [INF] after logic of ResponseHeaderActionFilter.OnActionExecutionAsync method
+2023-07-04 20:13:35.018 +01:00 [INF] before logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 20:13:35.027 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Countries/UploadFromExcel.cshtml'.
+2023-07-04 20:13:35.028 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Create.cshtml'.
+2023-07-04 20:13:35.028 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Delete.cshtml'.
+2023-07-04 20:13:35.028 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Edit.cshtml'.
+2023-07-04 20:13:35.029 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/Index.cshtml'.
+2023-07-04 20:13:35.029 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Persons/PersonsPDF.cshtml'.
+2023-07-04 20:13:35.029 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Breadcrumb.cshtml'.
+2023-07-04 20:13:35.029 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Error.cshtml'.
+2023-07-04 20:13:35.029 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_GridColumnHeader.cshtml'.
+2023-07-04 20:13:35.029 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-07-04 20:13:35.030 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-07-04 20:13:35.030 +01:00 [DBG] Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-07-04 20:13:35.041 +01:00 [DBG] View lookup cache miss for view 'Index' in controller 'Persons'.
+2023-07-04 20:13:35.054 +01:00 [INF] Executing ViewResult, running view Index.
+2023-07-04 20:13:35.069 +01:00 [DBG] The view path '/Views/Persons/Index.cshtml' was found in 14.2927ms.
+2023-07-04 20:13:35.181 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.197 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 20:13:35.198 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 20:13:35.223 +01:00 [DBG] View lookup cache miss for view '_Breadcrumb' in controller 'Persons'.
+2023-07-04 20:13:35.287 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.288 +01:00 [DBG] Successfully processed template Persons/Create for CRUDExample.Controllers.PersonsController.Create (CRUDExample) resulting in /Persons/Create and 
+2023-07-04 20:13:35.288 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Create (CRUDExample)","CRUDExample.Controllers.PersonsController.Create (CRUDExample)"] with result /Persons/Create
+2023-07-04 20:13:35.291 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.291 +01:00 [DBG] Successfully processed template Persons/PersonsPDF for CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample) resulting in /Persons/PersonsPDF and 
+2023-07-04 20:13:35.291 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsPDF (CRUDExample)"] with result /Persons/PersonsPDF
+2023-07-04 20:13:35.292 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.293 +01:00 [DBG] Successfully processed template Persons/PersonsCSV for CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample) resulting in /Persons/PersonsCSV and 
+2023-07-04 20:13:35.293 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsCSV (CRUDExample)"] with result /Persons/PersonsCSV
+2023-07-04 20:13:35.294 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.294 +01:00 [DBG] Successfully processed template Persons/PersonsExcel for CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample) resulting in /Persons/PersonsExcel and 
+2023-07-04 20:13:35.294 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.PersonsExcel (CRUDExample)"] with result /Persons/PersonsExcel
+2023-07-04 20:13:35.336 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.337 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 20:13:35.337 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 20:13:35.338 +01:00 [DBG] View lookup cache miss for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.440 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.462 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.463 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.466 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.472 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.473 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.473 +01:00 [DBG] View lookup cache hit for view '_GridColumnHeader' in controller 'Persons'.
+2023-07-04 20:13:35.503 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.505 +01:00 [DBG] No endpoints found for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.511 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.512 +01:00 [DBG] Successfully processed template Persons/Index for CRUDExample.Controllers.PersonsController.Index (CRUDExample) resulting in /Persons/Index and 
+2023-07-04 20:13:35.512 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.PersonsController.Index (CRUDExample)","CRUDExample.Controllers.PersonsController.Index (CRUDExample)"] with result /Persons/Index
+2023-07-04 20:13:35.515 +01:00 [DBG] Found the endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-07-04 20:13:35.516 +01:00 [DBG] Successfully processed template Countries/UploadFromExcel for CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample) resulting in /Countries/UploadFromExcel and 
+2023-07-04 20:13:35.516 +01:00 [DBG] Link generation succeeded for endpoints ["CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)","CRUDExample.Controllers.CountriesController.UploadFromExcel (CRUDExample)"] with result /Countries/UploadFromExcel
+2023-07-04 20:13:35.552 +01:00 [INF] Executed ViewResult - view Index executed in 511.2814ms.
+2023-07-04 20:13:35.553 +01:00 [INF] after logic of PersonsListResultFilter.OnResultExecutionAsync method
+2023-07-04 20:13:35.555 +01:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 3239.6451ms
+2023-07-04 20:13:35.556 +01:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2023-07-04 20:13:35.556 +01:00 [INF] Response:
+StatusCode: 200
+X-Custom-Key-From-Global: [Redacted]
+X-Custom-Key-From-Action-Method: [Redacted]
+X-Custom-Key-From-Controller: [Redacted]
+Content-Type: text/html; charset=utf-8
+Last-Modified: 04-07-2023 20:13
+2023-07-04 20:13:35.561 +01:00 [INF] HTTP GET /Persons/Index responded 200 in 3455.1146 ms
+2023-07-04 20:13:35.577 +01:00 [DBG] 'ApplicationDbContext' disposed.
+2023-07-04 20:13:35.580 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost/Persons/Index - - - 200 - text/html;+charset=utf-8 3502.7238ms
+2023-07-04 20:13:35.702 +01:00 [DBG] Hosting stopping
+2023-07-04 20:13:35.704 +01:00 [DBG] Hosting stopping
+2023-07-04 20:13:35.704 +01:00 [DBG] Hosting stopped
+2023-07-04 20:13:35.704 +01:00 [DBG] Hosting stopped

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-content">
+            <div class="margin-bottom">
+                <div class="flex" id="top-bar-div">
+                    <div class="flex-1" id="app-title-div">
+                        <h1 class="app-title">
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
+                            Stocks
+                        </h1>
+                    </div>
+                    <div class="flex-1 pr" id="search-box-div">
+                        <input type="search" class="search-text" placeholder="Search Stocks" name="SearchText" />
+                        <i class="fa-solid fa-gear"></i>
+                        <button class="button button-blue-back ml login-button">Login</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar mb">
+                <ul>
+                    @if (ViewBag.CurrentUrl == "~/trade/index")
+                    {
+                        <li><a href="~/trade/index" class="nav-active">Trade</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="~/trade/index">Trade</a></li>
+                    }
+
+                    @if (ViewBag.CurrentUrl == "~/trade/orders")
+                    {
+                        <li><a href="~/trade/orders" class="nav-active">Orders</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="~/trade/orders">Orders</a></li>
+                    }
+                </ul>
+            </div>
+
+            @RenderBody()
+        </div>
+
+    </div>
+
+    @await RenderSectionAsync("Update_Price", required: false)
+</body>
+</html>
+
+
+

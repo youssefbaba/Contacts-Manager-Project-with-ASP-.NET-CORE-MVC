@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\bin\Debug\net6.0\RepositoryContracts.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\bin\Debug\net6.0\Entities.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\bin\Debug\net6.0\Entities.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.csproj.CopyComplete
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\refint\RepositoryContracts.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CRUDExample\RepositoryContracts\obj\Debug\net6.0\ref\RepositoryContracts.dll

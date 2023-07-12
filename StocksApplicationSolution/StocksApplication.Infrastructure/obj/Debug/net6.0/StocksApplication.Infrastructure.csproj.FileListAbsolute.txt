@@ -1,0 +1,17 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\bin\Debug\net6.0\StocksApplication.Infrastructure.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\bin\Debug\net6.0\StocksApplication.Infrastructure.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\bin\Debug\net6.0\StocksApplication.Infrastructure.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\bin\Debug\net6.0\StocksApplication.Infrastructure.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\bin\Debug\net6.0\StocksApplication.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\bin\Debug\net6.0\StocksApplication.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.csproj.CopyComplete
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\refint\StocksApplication.Infrastructure.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\StocksApplication.Infrastructure.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Infrastructure\obj\Debug\net6.0\ref\StocksApplication.Infrastructure.dll

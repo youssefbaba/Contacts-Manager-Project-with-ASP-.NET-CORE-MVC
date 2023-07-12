@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "1egB+hdLZGho9FOGf84/FT9+T3sSmecSn4G/R9lOqKQ=",
+  "Source": "StaticFilesDemo",
+  "BasePath": "_content/StaticFilesDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StaticFilesDemo\\wwwroot",
+      "Source": "StaticFilesDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\StaticFilesDemo\\StaticFilesDemo\\wwwroot\\",
+      "BasePath": "_content/StaticFilesDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

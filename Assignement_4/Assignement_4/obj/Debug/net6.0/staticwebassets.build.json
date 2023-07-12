@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "DLtk0u+Z+e+wTCaXMvGi1UePU8wvKz1YFS7aDIsCudE=",
+  "Source": "Assignement_4",
+  "BasePath": "_content/Assignement_4",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Assignement_4\\wwwroot",
+      "Source": "Assignement_4",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_4\\Assignement_4\\wwwroot\\",
+      "BasePath": "_content/Assignement_4",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_4\\Assignement_4\\wwwroot\\docs.pdf",
+      "SourceId": "Assignement_4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\Assignement_4\\Assignement_4\\wwwroot\\",
+      "BasePath": "_content/Assignement_4",
+      "RelativePath": "docs.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs.pdf"
+    }
+  ]
+}

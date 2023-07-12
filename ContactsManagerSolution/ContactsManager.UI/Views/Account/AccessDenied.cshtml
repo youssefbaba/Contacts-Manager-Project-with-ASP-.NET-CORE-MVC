@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Access Denied";
+}
+
+<div class="text-center">
+    <h1>Error.</h1>
+    <h2 class="text-red">Please, You don't have access to this particular Url : @(Context.Request.Query["ReturnUrl"])</h2>
+</div>
+

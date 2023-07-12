@@ -1,0 +1,9 @@
+{
+  "CRUDExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\CRUDExample\\CRUDExample",
+  "Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\CRUDExample\\Entities",
+  "Exceptions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\CRUDExample\\Exceptions",
+  "RepositoryContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\CRUDExample\\RepositoryContracts",
+  "RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\CRUDExample\\RepositoryLayer",
+  "ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\CRUDExample\\ServiceContracts",
+  "ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\CRUDExample\\ServiceLayer"
+}

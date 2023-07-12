@@ -1,0 +1,17 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\bin\Debug\net6.0\ServiceLayer.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\bin\Debug\net6.0\ServiceLayer.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\bin\Debug\net6.0\ServiceLayer.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\bin\Debug\net6.0\Entities.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\bin\Debug\net6.0\Entities.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\bin\Debug\net6.0\ServiceContracts.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CopyComplete
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\refint\ServiceLayer.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ServiceLayer.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_13\ServiceLayer\obj\Debug\net6.0\ref\ServiceLayer.dll

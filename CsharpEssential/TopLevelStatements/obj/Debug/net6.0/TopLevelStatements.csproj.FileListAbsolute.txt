@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\bin\Debug\net6.0\TopLevelStatements.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\bin\Debug\net6.0\TopLevelStatements.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\bin\Debug\net6.0\TopLevelStatements.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\bin\Debug\net6.0\TopLevelStatements.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\bin\Debug\net6.0\TopLevelStatements.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\refint\TopLevelStatements.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\TopLevelStatements.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\TopLevelStatements\obj\Debug\net6.0\ref\TopLevelStatements.dll

@@ -1,0 +1,12 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\bin\Debug\net6.0\ServiceContracts.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\bin\Debug\net6.0\ServiceContracts.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ServiceContracts.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\refint\ServiceContracts.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ServiceContracts.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApp\ServiceContracts\obj\Debug\net6.0\ref\ServiceContracts.dll

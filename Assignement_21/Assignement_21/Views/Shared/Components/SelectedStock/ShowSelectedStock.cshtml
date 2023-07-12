@@ -1,0 +1,12 @@
+﻿@model StockTrade
+
+<img src="@ViewBag.Logo" width="200" />
+<h1>@Model.StockName (@Model.StockSymbol)</h1>
+<span class="pill">@ViewBag.FinnhubIndustry</span>
+
+<h3 class="mb">Exchange: <span class="pill">@ViewBag.Exchange</span></h3>
+
+<h1 class="stock-price"><span class="text-grey">$</span> @Model.Price</h1>
+<a class="button-link button-blue-back" id="trade-button" asp-controller="Trade" asp-action="Index" asp-route-stockSymbol="@Model.StockSymbol">Trade Now</a>
+
+

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "About";
+    ListModel listModel = new ListModel();
+    listModel.ListTitle = "Car Models";
+    listModel.ListItems = new List<string>()
+            {
+                "BMW",
+                "Ford",
+                "Alfa Romeo",
+                "Honda",
+                "Kia"
+            };
+
+}
+
+<h1>About</h1>
+<p>Welcome to about page</p>
+
+@* Html Helper to render content of partial view *@
+@{
+    await Html.RenderPartialAsync(partialViewName: "_ListPartialView", model: listModel);
+}
+

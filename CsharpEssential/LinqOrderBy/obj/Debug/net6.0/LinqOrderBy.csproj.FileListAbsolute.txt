@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\bin\Debug\net6.0\LinqOrderBy.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\bin\Debug\net6.0\LinqOrderBy.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\bin\Debug\net6.0\LinqOrderBy.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\bin\Debug\net6.0\LinqOrderBy.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\bin\Debug\net6.0\LinqOrderBy.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\refint\LinqOrderBy.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\LinqOrderBy.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqOrderBy\obj\Debug\net6.0\ref\LinqOrderBy.dll

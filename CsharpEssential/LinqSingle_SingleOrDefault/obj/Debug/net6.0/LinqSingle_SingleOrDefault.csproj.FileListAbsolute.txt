@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\bin\Debug\net6.0\LinqSingle_SingleOrDefault.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\bin\Debug\net6.0\LinqSingle_SingleOrDefault.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\bin\Debug\net6.0\LinqSingle_SingleOrDefault.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\bin\Debug\net6.0\LinqSingle_SingleOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\bin\Debug\net6.0\LinqSingle_SingleOrDefault.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\refint\LinqSingle_SingleOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\LinqSingle_SingleOrDefault.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqSingle_SingleOrDefault\obj\Debug\net6.0\ref\LinqSingle_SingleOrDefault.dll

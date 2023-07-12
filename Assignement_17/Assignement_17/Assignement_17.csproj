@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>0cc1b498-ece7-4f50-bc35-99de4862a039</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Views\Trade\Index.cshtml~RF11d222bd.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Rotativa.AspNetCore" Version="1.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\RepositoryContracts\RepositoryContracts.csproj" />
+		<ProjectReference Include="..\RepositoryLayer\RepositoryLayer.csproj" />
+		<ProjectReference Include="..\ServiceContracts\ServiceContracts.csproj" />
+		<ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj" />
+	</ItemGroup>
+	
+   	<ItemGroup>
+		<InternalsVisibleTo Include="Testing" />
+	</ItemGroup>
+
+</Project>

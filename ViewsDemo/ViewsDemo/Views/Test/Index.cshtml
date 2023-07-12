@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Person>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @*<title>@ViewData["appTitle"]</title>*@
+    <title>@ViewBag.appTitle</title>
+    @*<title>@ViewBag.title</title>*@
+    <link rel="stylesheet" href="~/StyleSheet.css">
+</head>
+<body>
+    <div class="page-content">
+        <h1>Persons</h1>
+        @*@foreach (var person in (List<Person>)ViewData["people"])*@
+        @*@foreach (Person person in ViewBag.people)*@
+        @foreach (Person person in Model)
+        {
+            <div class="box float-left w-50">
+                <h3>@person.PersonName</h3>
+                <table class="table w-100">
+                    <tbody>
+                        <tr>
+                            <td>Gender</td>
+                            <td>@person.PersonGender</td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth</td>
+                            <td>
+                                @if (person.DateOfBirth.HasValue)
+                                {
+                                    <span>@person.DateOfBirth.Value.ToString("yyyy/MM/dd")</span>
+                                }
+                                else
+                                {
+                                    <span>Unknown</span>
+                                }
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <a href="/person-details/@person.PersonName">Details</a>
+                </div>
+            </div>
+        }
+        <div class="clear">
+            <a href="/person-with-product">Person With Product</a>
+        </div>
+    </div>
+</body>
+</html>

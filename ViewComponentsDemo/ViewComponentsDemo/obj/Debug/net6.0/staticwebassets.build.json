@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "oQnEdg8l2GTHYhgdrnoZ8DGM8iYW6gTP3hJL35CGrnc=",
+  "Source": "ViewComponentsDemo",
+  "BasePath": "_content/ViewComponentsDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ViewComponentsDemo\\wwwroot",
+      "Source": "ViewComponentsDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewComponentsDemo\\ViewComponentsDemo\\wwwroot\\",
+      "BasePath": "_content/ViewComponentsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewComponentsDemo\\ViewComponentsDemo\\wwwroot\\loadTeam.js",
+      "SourceId": "ViewComponentsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewComponentsDemo\\ViewComponentsDemo\\wwwroot\\",
+      "BasePath": "_content/ViewComponentsDemo",
+      "RelativePath": "loadTeam.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\loadTeam.js"
+    },
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewComponentsDemo\\ViewComponentsDemo\\wwwroot\\StyleSheet.css",
+      "SourceId": "ViewComponentsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\ViewComponentsDemo\\ViewComponentsDemo\\wwwroot\\",
+      "BasePath": "_content/ViewComponentsDemo",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

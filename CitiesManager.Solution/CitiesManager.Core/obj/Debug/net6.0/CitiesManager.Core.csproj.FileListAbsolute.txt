@@ -1,0 +1,12 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\bin\Debug\net6.0\CitiesManager.Core.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\bin\Debug\net6.0\CitiesManager.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\bin\Debug\net6.0\CitiesManager.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\CitiesManager.Core.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\CitiesManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\CitiesManager.Core.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\CitiesManager.Core.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\CitiesManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\CitiesManager.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\refint\CitiesManager.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\CitiesManager.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CitiesManager.Solution\CitiesManager.Core\obj\Debug\net6.0\ref\CitiesManager.Core.dll

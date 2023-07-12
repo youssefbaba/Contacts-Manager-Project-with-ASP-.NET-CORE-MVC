@@ -1,0 +1,12 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\bin\Debug\net6.0\StocksApplication.Core.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\bin\Debug\net6.0\StocksApplication.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\bin\Debug\net6.0\StocksApplication.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\StocksApplication.Core.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\StocksApplication.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\StocksApplication.Core.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\StocksApplication.Core.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\StocksApplication.Core.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\StocksApplication.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\refint\StocksApplication.Core.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\StocksApplication.Core.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\StocksApplicationSolution\StocksApplication.Core\obj\Debug\net6.0\ref\StocksApplication.Core.dll

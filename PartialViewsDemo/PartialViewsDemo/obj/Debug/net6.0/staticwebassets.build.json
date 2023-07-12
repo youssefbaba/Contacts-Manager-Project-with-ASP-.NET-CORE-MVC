@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "Wqvi/fRmH/YwLXaQYhr/88tAUjh1efDtxp25Z+tAW4c=",
+  "Source": "PartialViewsDemo",
+  "BasePath": "_content/PartialViewsDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PartialViewsDemo\\wwwroot",
+      "Source": "PartialViewsDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\PartialViewsDemo\\PartialViewsDemo\\wwwroot\\",
+      "BasePath": "_content/PartialViewsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\PartialViewsDemo\\PartialViewsDemo\\wwwroot\\LoadProgrammingLanguages.js",
+      "SourceId": "PartialViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\PartialViewsDemo\\PartialViewsDemo\\wwwroot\\",
+      "BasePath": "_content/PartialViewsDemo",
+      "RelativePath": "LoadProgrammingLanguages.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\LoadProgrammingLanguages.js"
+    },
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\PartialViewsDemo\\PartialViewsDemo\\wwwroot\\StyleSheet.css",
+      "SourceId": "PartialViewsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\PartialViewsDemo\\PartialViewsDemo\\wwwroot\\",
+      "BasePath": "_content/PartialViewsDemo",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

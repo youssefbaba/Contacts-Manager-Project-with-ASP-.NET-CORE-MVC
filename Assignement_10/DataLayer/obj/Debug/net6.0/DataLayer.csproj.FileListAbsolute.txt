@@ -1,0 +1,12 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\bin\Debug\net6.0\DataLayer.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\DataLayer.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\Assignement_10\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll

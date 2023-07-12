@@ -1,0 +1,15 @@
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\bin\Debug\net6.0\LinqFirst_FirstOrDefault.exe
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\bin\Debug\net6.0\LinqFirst_FirstOrDefault.deps.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\bin\Debug\net6.0\LinqFirst_FirstOrDefault.runtimeconfig.json
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\bin\Debug\net6.0\LinqFirst_FirstOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\bin\Debug\net6.0\LinqFirst_FirstOrDefault.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.csproj.AssemblyReference.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.AssemblyInfoInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.AssemblyInfo.cs
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.csproj.CoreCompileInputs.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\refint\LinqFirst_FirstOrDefault.dll
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.pdb
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\LinqFirst_FirstOrDefault.genruntimeconfig.cache
+C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Asp_Dot_Net_Core\CsharpEssential\LinqFirst_FirstOrDefault\obj\Debug\net6.0\ref\LinqFirst_FirstOrDefault.dll

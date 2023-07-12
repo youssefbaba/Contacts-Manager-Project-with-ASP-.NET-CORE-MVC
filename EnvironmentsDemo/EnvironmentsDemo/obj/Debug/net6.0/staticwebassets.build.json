@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "ciJ3zDVL3560RK1j7/ongnxESFSAYBSl6oBftTu3sSs=",
+  "Source": "EnvironmentsDemo",
+  "BasePath": "_content/EnvironmentsDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EnvironmentsDemo\\wwwroot",
+      "Source": "EnvironmentsDemo",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\EnvironmentsDemo\\EnvironmentsDemo\\wwwroot\\",
+      "BasePath": "_content/EnvironmentsDemo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\EnvironmentsDemo\\EnvironmentsDemo\\wwwroot\\StyleSheet.css",
+      "SourceId": "EnvironmentsDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\YoussefBaba\\Desktop\\My_Computer\\My-Projects\\Cours\\Asp_Dot_Net_Core\\EnvironmentsDemo\\EnvironmentsDemo\\wwwroot\\",
+      "BasePath": "_content/EnvironmentsDemo",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+﻿@model PersonAndProductWrapperModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Person And Product</title>
+    <link rel="stylesheet" href="~/StyleSheet.css">
+</head>
+<body>
+    <div class="page-content">
+        <h1>Person And Product</h1>
+        <div class="box w-50">
+            <h3>Person</h3>
+            <table class="table w-100">
+                <tbody>
+                    <tr>
+                        <td>Person Name</td>
+                        <td>@Model.PersonData.PersonName</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>@Model.PersonData.PersonGender</td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth</td>
+                        @if (Model.PersonData.DateOfBirth.HasValue)
+                        {
+                            <td>@string.Format("{0:yyyy/MM/dd}", Model.PersonData.DateOfBirth.Value)</td>
+                        }
+                        else
+                        {
+                            <td>Unknown</td>
+                        }
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="box w-50">
+            <h3>Product</h3>
+            <table class="table w-100">
+                <tbody>
+                    <tr>
+                        <td>Product Id</td>
+                        <td>@Model.ProductData.ProductId</td>
+                    </tr>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>@Model.ProductData.ProductName</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>@Model.ProductData.Price</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="/test">Back to persons</a>
+    </div>
+</body>
+</html>
