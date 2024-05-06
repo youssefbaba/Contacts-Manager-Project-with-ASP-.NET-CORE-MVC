@@ -1,2 +1,2 @@
 # Asp_Dot_Net_Core
-Asp Net Core Deep Dive
+Contacts Manager Project with ASP .NET CORE MVC
